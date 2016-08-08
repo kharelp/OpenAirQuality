@@ -1,0 +1,169 @@
+body{			
+	background-color: rgb(239,239,239);
+	max-width:1080px;
+	margin:0 auto;	
+	height:100%;
+}
+
+h2,h3{text-align: center;}
+h4{text-align:left;}
+ul{text-align: center;}
+
+.photoContent{
+    width: 100%;
+    top: 50px;
+    position: relative;
+	image align: center
+}
+
+
+#home #homelink, #arduinosensors #arduinosensorslink, #globedata #globedatalink, #dataanalyses #dataanalyseslink, #meettheteam #meettheteamlink{
+color:purple;
+}
+
+#homelink:hover{color:purple;}
+#arduinosensorslink:hover{color:purple;}
+#globelink:hover{color:purple;}
+#dataanalyseslink:hover{color:purple;}
+#meettheteamlink:hover{color:purple;}
+
+
+#J-title-box{
+	background-color: rgb(239,239,239);
+	margin-right: 0px;
+	margin-top:0px;
+    margin-bottom: 0px;
+    margin-left:0px;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:120px;
+	padding-right:120px;
+	
+}
+
+ ul.navigation {
+	margin-right: 0px;
+	margin-top:0px;
+    margin-bottom: 0px;
+    margin-left:0px;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:120px;
+	padding-right:120px;
+	list-style:none;
+	border-bottom:1px solid RGB(213, 210, 204);
+	overflow:hidden;
+	zoom:1;
+}
+
+ul.navigation li {
+    float:left;
+}
+
+ul.navigation a{
+	width:10em;
+	display:inline;
+	padding-left:20px;
+	padding-right:20px;
+	background-color: rgb(239,239,239);
+	text-decoration:none;
+	color:black;
+	text-align:center;
+
+}
+
+#box-set {
+	margin-right: 0px;
+	margin-top:0px;
+    margin-bottom: 0px;
+    margin-left:0px;
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:120px;
+	padding-right:120px;
+
+}
+
+	/*total width=1080, so 5 pics should have a width of 1080-left padding-rightpadding=1080-120-120=840, so each image should have width of 840/5=168px;*/
+.box {
+  float: left;
+  width:168px;
+  color:black;
+  text-align: center;
+  border-top:1px solid RGB(213, 210, 204);
+  border-bottom:1px solid RGB(213, 210, 204);
+
+}
+
+.box:hover{color:purple ; background-color:rgb(225,225,225) ;}
+.box:active{color:purple ;background-color:rgb(225,225,225) ;}
+
+.link{
+	color:rgb(95,95,95) ;
+	}
+
+.link:hover{color:blue ;}
+.link:active{color:blue ;}
+
+
+ /*NEED TO FIX THE FOOTER THINGY - COPYRIGHT
+#footer{
+
+	position:absolute;
+	bottom:0px;
+
+} 
+*/
+#J-pic{
+	width: 120px;
+	float: left;
+	margin-right: 30px;
+	margin-top:0px;
+    margin-bottom: 0px;
+        }
+#U-pic{
+	width: 480px;
+	float: left;
+	margin-right: 30px;
+	margin-top:0px;
+    margin-bottom: 0px;
+}
+#title{
+	font-size: 25px;
+	color:rgb(32,32,32) ;
+}
+
+#position{
+	font-size: 20px;
+	font-family:Times New Roman;
+	color:black;
+	border-bottom:1px solid RGB(213, 210, 204);
+	padding-bottom:25px;
+}
+
+#Papers?{
+	font-size: 20px;
+	font-family:Times New Roman;
+	color:black ;
+	border-bottom:1px solid RGB(213, 210, 204);
+	padding-bottom:25px;
+	border-top:1px solid RGB(213, 210, 204);
+	padding-top:25px;
+}
+		
+#Bio?{
+	text-align: justify;
+	padding-top:30px;
+
+}
+
+#text_of_blog{
+	text-align: justify;
+}
+
+.year, .mail, .blog_post{
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:underline;
+	
+}
