@@ -3,17 +3,31 @@
     <head>
 		<%= commonHeader %>
     </head>
-	    <body id ="home">
-			<div id = "fivecolleges-title-box">
-				<ul class="navigation">
-					<li><a id="homelink" STYLE="text-decoration: none" href="/">HOME</a></li>
-					<li><a id="arduinolink" STYLE="text-decoration: none" href="arduinosensors">ARDUINO SENSORS</a></li>
-					<li><a id="ktmlink" STYLE="text-decoration: none" href="kathmandu">KATHMANDU</a></li>
-					<li><a id="springfieldlink" STYLE="text-decoration: none" href="springfield">SPRINGFIELD</a></li>
-					<li><a id="meettheteamlink" STYLE="text-decoration: none" href="meettheteam">MEET THE TEAM </a></li>
-				</ul>
+	<body id ="home">
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Bootstrap theme</a>
 			</div>
-				
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="arduinosensors">Arduino Sensors</a></li>
+				<li><a href="kathmandu">Kathmandu</a></li>
+				<li><a href="springfield">Springfield</a></li>
+				<li><a href="meettheteam">Meet The Team</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</nav>
+
 				<br>
 				<h2  id="title"> Open City Smart and Air Quality Sensing: </h2>
 				<h2 id ="title"> Coupling Low-Cost Open Source Arduino-based Air Quality Sensor Data </h2>  
