@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /*Header for bootstrap for every page*/
-var rendervalues = { bootstrap: '<meta charset="utf-8"> \
+var rendervalues = { commonHeader: '<meta charset="utf-8"> \
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> \
     <meta name="viewport" content="width=device-width, initial-scale=1"> \
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> \
