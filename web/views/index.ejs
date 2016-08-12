@@ -4,89 +4,73 @@
 		<%- commonHeader %>
     </head>
 	<body id ="home">
-		<!-- Fixed navbar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand" href="#">Open Air Quality</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-			  <ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="arduinosensors">Arduino Sensors</a></li>
-				<li><a href="kathmandu">Kathmandu</a></li>
-				<li><a href="springfield">Springfield</a></li>
-				<li><a href="meettheteam">Meet The Team</a></li>
-			  </ul>
-			</div><!--/.nav-collapse -->
-		  </div>
-		</nav>
+		<%-commonNavigation%> <!-- Fixed navbar -->
 		
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-			  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-			  <div class="item active">
-				<img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
-			  </div>
-			  <div class="item">
-				<img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
-			  </div>
-			  <div class="item">
-				<img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
-			  </div>
-			</div>
-			<a class="left carousel-control" href="/images/ktm" role="button" data-slide="prev">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
-		  </div>
+		<div class="container-fluid">
+		
 
-				<br>
-				<h2  id="title"> Open City Smart and Air Quality Sensing: </h2>
-				<h2 id ="title"> Coupling Low-Cost Open Source Arduino-based Air Quality Sensor Data </h2>  
-				<br>
-				<h3 id = "position"> Five Colleges NASA WebWorldWind Project </h3> 
-				
-				<p>
-				<div style="text-align: center;"><img src="/images/wwd.png" alt="wwdpic" width="1050" height="300"></div>
-				</p>
-				
-				<h4 id="subtitle"> About the Project</h4>
-				
-				<p>This project maps and analyzes air pollution data collected from three urban locations around the world: Nepal, Ghana and the United States.  It involves three key components. Part I involves the design, development and communication of the open source design of low-cost Arduino air quality sensors. Part II involves the collection of data using these sensors, which is happening currently in Springfield and will also happen later this Fall in Ghana. Part III entails the use of NASA’s open source virtual globe technology, WebWorldWind, to display the collected data and to display results of spatio-temporal data analyses of this data. We will also display similar spatio-temporal air quality data collected with non-arduino sensors in Kathmandu, Nepal.  </p>
-				
 		
+				
+			 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+				  <div class="item active">
+					<img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+				  </div>
+				  <div class="item">
+					<img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
+				  </div>
+				  <div class="item">
+					<img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
+				  </div>
+				</div>
+				<a class="left carousel-control" href="ktm" role="button" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
+
+					<br>
+					<h2  id="title"> Open City Smart and Air Quality Sensing: </h2>
+					<h2 id ="title"> Coupling Low-Cost Open Source Arduino-based Air Quality Sensor Data </h2>  
+					<br>
+					<h3 id = "position"> Five Colleges NASA WebWorldWind Project </h3> 
 					
-				<h4 id="subtitle"> Video Documenting the Project</h4>
-				<p> A short 3 minute video will also be uploaded here </p>
-				
-		</div >
-		<br>
+					<p>
+					<div style="text-align: center;"><img src="/images/wwd.png" alt="wwdpic" width="1050" height="300"></div>
+					</p>
+					
+					<h4 id="subtitle"> About the Project</h4>
+					
+					<p>This project maps and analyzes air pollution data collected from three urban locations around the world: Nepal, Ghana and the United States.  It involves three key components. Part I involves the design, development and communication of the open source design of low-cost Arduino air quality sensors. Part II involves the collection of data using these sensors, which is happening currently in Springfield and will also happen later this Fall in Ghana. Part III entails the use of NASA’s open source virtual globe technology, WebWorldWind, to display the collected data and to display results of spatio-temporal data analyses of this data. We will also display similar spatio-temporal air quality data collected with non-arduino sensors in Kathmandu, Nepal.  </p>
+					
+			
+						
+					<h4 id="subtitle"> Video Documenting the Project</h4>
+					<p> A short 3 minute video will also be uploaded here </p>
+					
+			</div >
+			<br>
+			
 		
-	
-		<div id="box-set">
-			<a class="box" STYLE="text-decoration: none" href="/"><figure ><h4>Home</h4> <img src = "/images/wwd.png" alt="Home" width="70" height="70"></figure> </a>
-			<a class="box" STYLE="text-decoration: none" href="arduinosensors"><figure ><h4>Arduino Sensors</h4> <img src = "/images/arduino.png" alt="Arduino" width="70" height="70"></figure> </a>
-			<a class="box" STYLE="text-decoration:none" href="kathmandu"><figure> <h4> Kathmandu</h4><img src = "/images/ktm.jpg" alt="Kathmandu" width="70" height="70"> </figure></a>
-			<a class="box" STYLE="text-decoration:none" href="springfield"><figure> <h4> Springfield</h4><img src = "/images/springfield.jpg" alt="Springfield" width="70" height="70"> </figure></a>
-			<a class="box" STYLE="text-decoration:none" href="meettheteam"><figure> <h4>Meet The Team</h4><img src = "/images/Contact.jpg" alt="Meet The Team" width="70" height="70"></figure></a>
-		</div>
-		<br>
-				 
+			<div id="box-set">
+				<a class="box" STYLE="text-decoration: none" href="/"><figure ><h4>Home</h4> <img src = "/images/wwd.png" alt="Home" width="70" height="70"></figure> </a>
+				<a class="box" STYLE="text-decoration: none" href="arduinosensors"><figure ><h4>Arduino Sensors</h4> <img src = "/images/arduino.png" alt="Arduino" width="70" height="70"></figure> </a>
+				<a class="box" STYLE="text-decoration:none" href="kathmandu"><figure> <h4> Kathmandu</h4><img src = "/images/ktm.jpg" alt="Kathmandu" width="70" height="70"> </figure></a>
+				<a class="box" STYLE="text-decoration:none" href="springfield"><figure> <h4> Springfield</h4><img src = "/images/springfield.jpg" alt="Springfield" width="70" height="70"> </figure></a>
+				<a class="box" STYLE="text-decoration:none" href="meettheteam"><figure> <h4>Meet The Team</h4><img src = "/images/Contact.jpg" alt="Meet The Team" width="70" height="70"></figure></a>
+			</div>
+		
+		</div> <!--Container Fluid-->
     </body>
 	
 </html>

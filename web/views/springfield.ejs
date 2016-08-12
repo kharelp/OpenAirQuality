@@ -4,23 +4,11 @@
 <html>
 
 	<head lang="en">
-		<meta charset="UTF-8">
-		<title>Simple Data Plotting</title>
-			<!-- Include the Web World Wind library. -->
-		<script src="http://worldwindserver.net/webworldwind/worldwindlib.js" type="text/javascript"></script>
-		<script src="/js/jquery-3.1.0.slim.min.js" type="text/javascript"></script>
-		<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
-		<script src="/js/bootstrapslider.js" type="text/javascript"></script>
-		<link type="text/css" rel="stylesheet" href="/css/bootstrapslider.css">
-			<!-- Should the following style code be moved to stylesheet?-->
-		<style>	#ex1Slider .slider-selection {
-			background: #BABABA;
-			}
-		</style>
-		<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+		<%- commonHeader %>
 	</head>
 
 	<body id ="home">
+		<%- commonNavigation %>
 		<div id = "fivecolleges-title-box">
 			<ul class="navigation">
 				<li><a id="homelink" STYLE="text-decoration: none" href="/">HOME</a></li>

@@ -29,7 +29,32 @@ var rendervalues = { commonHeader: '<meta charset="utf-8"> \
     <![endif]--> \
 	 \
 	<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"> \
-' }
+',
+/*Header for Navigation Bar for every page*/
+commonNavigation: '<nav class="navbar navbar-inverse navbar-fixed-top">\
+		  <div class="container">\
+			<div class="navbar-header">\
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">\
+				<span class="sr-only">Toggle navigation</span>\
+				<span class="icon-bar"></span>\
+				<span class="icon-bar"></span>\
+				<span class="icon-bar"></span>\
+			  </button>\
+			  <a class="navbar-brand" href="#">Open Air Quality</a>\
+			</div>\
+			<div id="navbar" class="navbar-collapse collapse">\
+			  <ul class="nav navbar-nav">\
+				<li class="active"><a href="#">Home</a></li>\
+				<li><a href="arduinosensors">Arduino Sensors</a></li>\
+				<li><a href="kathmandu">Kathmandu</a></li>\
+				<li><a href="springfield">Springfield</a></li>\
+				<li><a href="meettheteam">Meet The Team</a></li>\
+			  </ul>\
+			</div><!--/.nav-collapse -->\
+		  </div>\
+		</nav>\
+'		
+}
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
