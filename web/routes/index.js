@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /*Header for bootstrap for every page*/
-var rendervalues = { commonHeader: '<meta charset="utf-8"> \
+
+var commonHeader= '<meta charset="utf-8"> \
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> \
     <meta name="viewport" content="width=device-width, initial-scale=1"> \
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> \
@@ -29,9 +30,9 @@ var rendervalues = { commonHeader: '<meta charset="utf-8"> \
     <![endif]--> \
 	 \
 	<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"> \
-',
+'
 /*Header for Navigation Bar for every page*/
-commonNavigation: '<nav class="navbar navbar-inverse navbar-fixed-top">\
+var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\
 		  <div class="container">\
 			<div class="navbar-header">\
 			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">\
@@ -40,42 +41,29 @@ commonNavigation: '<nav class="navbar navbar-inverse navbar-fixed-top">\
 				<span class="icon-bar"></span>\
 				<span class="icon-bar"></span>\
 			  </button>\
-			  <a class="navbar-brand" href="#">Open Air Quality</a>\
+			  <a class="navbar-brand" href="/">Open Air Quality</a>\
 			</div>\
 			<div id="navbar" class="navbar-collapse collapse">\
 			  <ul class="nav navbar-nav">\
-				<li class="active"><a href="#">Home</a></li>\
-				<li><a href="arduinosensors">Arduino Sensors</a></li>\
-				<li><a href="kathmandu">Kathmandu</a></li>\
-				<li><a href="springfield">Springfield</a></li>\
-				<li><a href="meettheteam">Meet The Team</a></li>\
+				<li><a href="/arduinosensors">Arduino Sensors</a></li>\
+				<li><a href="/kathmandu">Kathmandu</a></li>\
+				<li><a href="/springfield">Springfield</a></li>\
+				<li><a href="/meettheteam">Meet The Team</a></li>\
 			  </ul>\
 			</div><!--/.nav-collapse -->\
 		  </div>\
 		</nav>\
 '		
+
+var pages = {'/': 'index','/arduinosensors':'arduinosensors', '/kathmandu':'kathmandu', 
+					'/springfield':'springfield', '/meettheteam':'meettheteam'}
+
+/* GET pages. */
+for (page in pages){
+	router.get(page, function(req, res, next) {
+		console.log('path requested: ' + req.originalUrl + '; page to be loaded: ' + pages[req.originalUrl]);
+		var cn = commonNavigation.replace(req.originalUrl, '#')
+		res.render(pages[req.originalUrl],{commonHeader: commonHeader, commonNavigation: cn});
+	});
 }
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', rendervalues);
-});
-
-router.get('/arduinosensors', function(req, res, next) {
-  res.render('arduinosensors', rendervalues);
-});
-
-router.get('/kathmandu', function(req, res, next) {
-  res.render('kathmandu', rendervalues);
-});
-
-router.get('/springfield', function(req, res, next) {
-  res.render('springfield', rendervalues);
-});
-
-router.get('/meettheteam', function(req, res, next) {
-  res.render('meettheteam', rendervalues);
-});
-
-
 module.exports = router;

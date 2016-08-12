@@ -5,14 +5,18 @@ body{
 	height:100%;
 }
 
-h2,h3{text-align: center;}
+h1,h2,h3{text-align: center;}
 h4{text-align:left;}
 ul{text-align: center;}
 
+#maincontent{
+position: absolute;
+top: 50px;
+}
 .photoContent{
-    width: 100%;
-    top: 50px;
     position: relative;
+	width: 100%;
+    top: 50px;
 	image align: center
 }
 
@@ -79,15 +83,15 @@ ul.navigation a{
     margin-left:0px;
     padding-bottom:10px;
     padding-top:10px;
-    padding-left:120px;
-	padding-right:120px;
+    padding-left:100px;
+	padding-right:100px;
 
 }
 
 	/*total width=1080, so 5 pics should have a width of 1080-left padding-rightpadding=1080-120-120=840, so each image should have width of 840/5=168px;*/
 .box {
   float: left;
-  width:168px;
+  width:160px;
   color:black;
   text-align: center;
   border-top:1px solid RGB(213, 210, 204);
@@ -127,10 +131,6 @@ ul.navigation a{
 	margin-right: 30px;
 	margin-top:0px;
     margin-bottom: 0px;
-}
-#title{
-	font-size: 25px;
-	color:rgb(32,32,32) ;
 }
 
 #position{
