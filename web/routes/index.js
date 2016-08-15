@@ -13,7 +13,11 @@ var commonHeader= '<meta charset="utf-8"> \n\
  \n\
 		<title>Five Colleges Open Air Quality Monitoring Project</title> \n\
  \n\
- 	<script type="text/JavaScript" src="/js/jquery-3.1.0.slim.min.js"></script> \n\
+		<!-- Bootstrap JS --> \n\
+ 		<script type="text/JavaScript" src="/js/jquery-3.1.0.slim.min.js"></script> \n\
+	    <script src="/js/bootstrap.min.js"></script> \n\
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> \n\
+		<script src="/js/ie10-viewport-bug-workaround.js"></script> \n\
  	\n\
 		<!-- Bootstrap core CSS --> \n\
 		<link href="/css/bootstrap.min.css" rel="stylesheet" /> \n\
