@@ -110,57 +110,14 @@ ul.navigation a{
 .link:active{color:blue ;}
 
 
- /*NEED TO FIX THE FOOTER THINGY - COPYRIGHT
-#footer{
-
-	position:absolute;
-	bottom:0px;
-
-} 
 */
-#J-pic{
+#Pic{
 	width: 120px;
 	float: left;
 	margin-right: 30px;
 	margin-top:0px;
     margin-bottom: 0px;
         }
-#U-pic{
-	width: 480px;
-	float: left;
-	margin-right: 30px;
-	margin-top:0px;
-    margin-bottom: 0px;
-}
-
-#position{
-	font-size: 20px;
-	font-family:Times New Roman;
-	color:black;
-	border-bottom:1px solid RGB(213, 210, 204);
-	padding-bottom:25px;
-}
-
-#Papers?{
-	font-size: 20px;
-	font-family:Times New Roman;
-	color:black ;
-	border-bottom:1px solid RGB(213, 210, 204);
-	padding-bottom:25px;
-	border-top:1px solid RGB(213, 210, 204);
-	padding-top:25px;
-}
-		
-#Bio?{
-	text-align: justify;
-	padding-top:30px;
-
-}
-
-#text_of_blog{
-	text-align: justify;
-}
-
 .year, .mail, .blog_post{
 	font-size:18px;
 	font-weight:bold;
