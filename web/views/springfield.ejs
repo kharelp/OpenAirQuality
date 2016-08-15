@@ -5,8 +5,7 @@
 
 	<head lang="en">
 		<%- commonHeader %>
-		<div id = maincontent class="container-fluid">
-			<div class="col-sm-12">
+		
 
 		<title>Springfield Data Visualization</title>
 			<!-- Include the Web World Wind library. -->
@@ -24,7 +23,8 @@
 
 	<body id ="home">
 		<%- commonNavigation %>
-		<br>
+		<div id = maincontent class="container-fluid">
+			<div class="col-sm-12">
 		<h2 id="subtitle"> Visualization of Air Pollution Data:</h2>
 		<h2 id="subtitle"> Springfield, Massachusetts, USA</h2>
 		<br>
@@ -35,6 +35,8 @@
 		<canvas id="canvasOne" width="900" height="900">
         </canvas>
 		</div>
+		</div>
+		</div>
 		
 		<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="23" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
 			<span id='time'>0:00</span>
@@ -43,6 +45,7 @@
 			<input type="radio" name="airquality" value="ozone" checked>Ozone <br>
 			<input type="radio" name="airquality" value="carbonm">Carbon Monoxide<br>
 		</form>
+	
 
 	<script>
 	
