@@ -21,18 +21,18 @@ top: 50px;
 }
 
 
-#home #homelink, #arduinosensors #arduinosensorslink, #globedata #globedatalink, #dataanalyses #dataanalyseslink, #meettheteam #meettheteamlink{
+#home #homelink, #arduinosensors #arduinosensorslink, #kathmandu #kathmandulink, #springfield #springfieldlink, #meettheteam #meettheteamlink{
 color:purple;
 }
 
 #homelink:hover{color:purple;}
 #arduinosensorslink:hover{color:purple;}
-#globelink:hover{color:purple;}
-#dataanalyseslink:hover{color:purple;}
+#kathmandulink:hover{color:purple;}
+#springfieldlink:hover{color:purple;}
 #meettheteamlink:hover{color:purple;}
 
 
-#J-title-box{
+#title-box{
 	background-color: rgb(239,239,239);
 	margin-right: 0px;
 	margin-top:0px;
@@ -88,7 +88,7 @@ ul.navigation a{
 
 }
 
-	/*total width=1080, so 5 pics should have a width of 1080-left padding-rightpadding=1080-120-120=840, so each image should have width of 840/5=168px;*/
+	
 .box {
   float: left;
   width:160px;
@@ -96,7 +96,6 @@ ul.navigation a{
   text-align: center;
   border-top:1px solid RGB(213, 210, 204);
   border-bottom:1px solid RGB(213, 210, 204);
-
 }
 
 .box:hover{color:purple ; background-color:rgb(225,225,225) ;}
@@ -105,22 +104,13 @@ ul.navigation a{
 .link{
 	color:rgb(95,95,95) ;
 	}
-
 .link:hover{color:blue ;}
 .link:active{color:blue ;}
 
-
-*/
 #Pic{
 	width: 120px;
 	float: left;
 	margin-right: 30px;
 	margin-top:0px;
     margin-bottom: 0px;
-        }
-.year, .mail, .blog_post{
-	font-size:18px;
-	font-weight:bold;
-	text-decoration:underline;
-	
 }
