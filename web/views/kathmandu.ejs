@@ -96,17 +96,17 @@
 			wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 		
 			//Making the slider change the data by hour
-			slider.on('change', function(data)
-			{var hour=data.newValue+'h';
-			placemarks(hour);
-			$('#time').text(data.newValue + ':00');
+			slider.on('change', function(data) {
+				var hour=data.newValue+'h';
+				placemarks(hour);
+				$('#time').text(data.newValue + ':00');
 			});
 				
 			// Adjust the Navigator to place Kathmandu in the center of the Web World Window.
 			wwd.navigator.lookAtLocation.latitude = 27.708172;
 			wwd.navigator.lookAtLocation.longitude = 85.320029;
-				// Approx. 2 million meters above the ellipsoid
-				wwd.navigator.range = 1e4; 
+			// Approx. 2 million meters above the ellipsoid
+			wwd.navigator.range = 1e4; 
 			
 			//PM2.5	
 			var aq = {
@@ -136,92 +136,29 @@
 				}
 			};
 
-		//Placing and coloring placemarks with air pollution data by hour (by creating a new function that ends after Thapathali placemark)
+			//Placing and coloring placemarks with air pollution data by hour (by creating a new function that ends after Thapathali placemark)
 	
-		placemarks('0h');
-			function placemarks(hour){
-			var value_radiob = $('input:radio[name=airquality]:checked').val();
+			// Add placemarks
+			function placemarks(hour) {
+				var value_radiob = $('input:radio[name=airquality]:checked').val();
 					
-			//Add a placemark at Balaju, Kathmandu
-			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
-			placemarkAttributes.imageColor = colorcode(aq.Balaju[value_radiob][hour],value_radiob);  
-			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(aq.Balaju.lat,aq.Balaju.lon,0),
-				<!----new WorldWind.Position(27.73483, 85.31126, 0),-->
-				true,
-				placemarkAttributes
-			);
-			var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
-			placemarkLayer.addRenderable(placemark);
-			wwd.addLayer(placemarkLayer);
-		
-			//Add a placemark at Chabahil, Kathmandu
-			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
-			placemarkAttributes.imageColor = colorcode(aq.Chabahil[value_radiob][hour],value_radiob);  
-			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(27.70149, 85.34029, 0),
-				true,
-				placemarkAttributes
-			);
-			var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
-			placemarkLayer.addRenderable(placemark);
-			wwd.addLayer(placemarkLayer);
-		
-			//Add a placemark at Jawalakhel, Kathmandu
-			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
-			placemarkAttributes.imageColor = colorcode(aq.Jawalakhel[value_radiob][hour],value_radiob); 
-			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(27.67314, 85.31322, 0),
-				true,
-				placemarkAttributes
-			);
-			var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
-			placemarkLayer.addRenderable(placemark);
-			wwd.addLayer(placemarkLayer);
-		
-			//Add a placemark at Kalanki, Kathmandu
-			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
-			placemarkAttributes.imageColor = colorcode(aq.Kalanki[value_radiob][hour], value_radiob); 
-			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(27.69225, 85.27814, 0),
-				true,
-				placemarkAttributes
-			);
-			var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
-			placemarkLayer.addRenderable(placemark);
-			wwd.addLayer(placemarkLayer);
-		
-			//Add a placemark at Koteshwor, Kathmandu
-			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
-			placemarkAttributes.imageColor = colorcode(aq.Koteshwor[value_radiob][hour],value_radiob); 
-			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(27.67431, 85.34316, 0),
-				true,
-				placemarkAttributes
-			);
-			var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
-			placemarkLayer.addRenderable(placemark);
-			wwd.addLayer(placemarkLayer);
-		
-			//Add a placemark at Thapathali, Kathmandu
-			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
-			placemarkAttributes.imageColor = colorcode(aq.Thapathali[value_radiob][hour],value_radiob); 
-			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(27.6926, 85.31531, 0),
-				true,
-				placemarkAttributes
-			);
-			var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
-			placemarkLayer.addRenderable(placemark);
-			wwd.addLayer(placemarkLayer);
+				var placemarkLayer = new WorldWind.RenderableLayer("Placemarks");
+				for (var location in aq)
+				{
+					placemarkAttributes = new WorldWind.PlacemarkAttributes();
+					placemarkAttributes.imageScale = 30;
+					placemarkAttributes.imageColor = colorcode(aq[location][value_radiob][hour], value_radiob);  
+					var placemark = new WorldWind.Placemark(
+						new WorldWind.Position(aq[location].lat,aq[location].lon, 100),
+						true,
+						placemarkAttributes
+					);
+					placemarkLayer.addRenderable(placemark);
+				}		
+				wwd.addLayer(placemarkLayer);
 			}
-	}
+			placemarks('0h');
+
 			//colorcode(aq.Balaju['1h']);
 			/*		
 			//Download geoJSON
@@ -232,6 +169,7 @@
 			//window.alert(data.layer == null));
 			wwd.addLayer(data.layer);
 			*/
+		}
 	</script>
 
 			<h2 id="subtitle"><div style="text-align: center; position: absolute; top: 1200px; left: 500px;"> Analyses of Kathmandu Air Pollution Data</div></h2>
