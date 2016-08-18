@@ -44,7 +44,7 @@ var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 				<span class="icon-bar"></span>\n\
 				<span class="icon-bar"></span>\n\
 			  </button>\n\
-			  <a class="navbar-brand" href="/">Open Air Quality</a>\n\
+			  <a class="navbar-brand active" href="/">Open Air Quality</a>\n\
 			</div>\n\
 			<div id="navbar" class="navbar-collapse collapse">\n\
 			  <ul class="nav navbar-nav">\n\
@@ -53,11 +53,10 @@ var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 				<li><a href="/springfield">Springfield</a></li>\n\
 				<li><a href="/meettheteam">Meet The Team</a></li>\n\
 			  </ul>\n\
-			</div><!--/.nav-collapse -->\n\
+			 </div><!--/.nav-collapse -->\n\
 		  </div>\n\
 		</nav>\n\
 '		
-
 var pages = {'/': 'index','/arduinosensors':'arduinosensors', '/kathmandu':'kathmandu', 
 					'/springfield':'springfield', '/meettheteam':'meettheteam'}
 
