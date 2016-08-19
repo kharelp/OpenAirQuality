@@ -9,7 +9,7 @@ var commonHeader= '<meta charset="utf-8"> \n\
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> \n\
 		<meta name="description" content=""> \n\
 		<meta name="author" content=""> \n\
-		<link rel="icon" href="../../favicon.ico" /> \n\
+		<link rel="icon" href="/images/favicon.ico" /> \n\
  \n\
 		<title>Five Colleges Open Air Quality Monitoring Project</title> \n\
  \n\
