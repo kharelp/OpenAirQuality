@@ -10,6 +10,7 @@
 		<script src="http://worldwindserver.net/webworldwind/worldwindlib.js" type="text/javascript"></script>
 		<script src="/js/jquery-3.1.0.slim.min.js" type="text/javascript"></script>
 		<script src="/js/bootstrapslider.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css"/>
 		<link type="text/css" rel="stylesheet" href="/css/bootstrapslider.css">
 			<!-- Should the following style code be moved to stylesheet?-->
 		<style>	#ex1Slider .slider-selection {
@@ -36,10 +37,41 @@
 				</div>
 				<div class="col-sm-8">
 					<!-- Create a canvas for Web World Wind. -->
-					<canvas id="canvasOne" width="500" height="500">
-					</canvas>
+					<canvas id="canvasOne" width="500" height="500"></canvas>
+
+					<!--Time Controls-->
+					<div class="interactive" style="position: absolute; top 65px; bottom: 0; width: 100%">
+						<!--Date/Time Buttons-->
+						<div id="timeControlButtons" style="width: 166px; margin-right: auto; margin-left: auto">
+							<div class="btn-group btn-group-sm interactive" role="group" style="float:bottom" aria-label="time controls">
+								<button id="time-fast-backward" type="button" class="btn btn-default repeatButton">
+									<span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+								</button>
+								<button id="time-step-backward" type="button" class="btn btn-default repeatButton">
+									<span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+								</button>
+								<button id="time-reset" type="button" class="btn btn-default" data-bind="click: onTimeReset, css:{active: autoUpdateTime}">
+									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+								<button id="time-step-forward" type="button" class="btn btn-default repeatButton">
+									<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+								</button>
+								<button id="time-fast-forward" type="button" class="btn btn-default repeatButton">
+									<span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+								</button>
+							</div>
+						</div>
+						<!--Date/Time Slider-->
+                                    <div id="timeControlSlider"
+                                         style="width: 166px; margin-right: auto; margin-left: auto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					</div>
 				</div>
 			</div>
+		</div>
 
 	<script>
 	
