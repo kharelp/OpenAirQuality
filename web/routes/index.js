@@ -57,7 +57,7 @@ var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 		  </div>\n\
 		</nav>\n\
 '		
-var commonFooter= '<footer>\n\
+var commonFooter= '<footer class=footer>\n\
 		<div class=container>\n\
 			<ul class=bs-docs-footer-links>\n\
 				<li><a href=https://github.com/twbs/bootstrap>GitHub</a></li>\n\
