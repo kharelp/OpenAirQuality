@@ -57,6 +57,19 @@ var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 		  </div>\n\
 		</nav>\n\
 '		
+var commonFooter= '<footer>\n\
+		<div class=container>\n\
+			<ul class=bs-docs-footer-links>\n\
+				<li><a href=https://github.com/twbs/bootstrap>GitHub</a></li>\n\
+				<li><a href=https://twitter.com/getbootstrap>Twitter</a></li>\n\
+				<li><a href=../getting-started/#examples>Examples</a></li>\n\
+				<li><a href=../about/ >About</a></li>\n\
+			</ul>\n\
+			<p>Designed and built with all the love in the world by <a href=https://twitter.com/mdo target=_blank>@mdo</a> and <a href=https://twitter.com/fat target=_blank>@fat</a>. Maintained by the <a href=https://github.com/orgs/twbs/people>core team</a> with the help of <a href=https://github.com/twbs/bootstrap/graphs/contributors>our contributors</a>.</p>\n\
+			<p>Code licensed <a href=https://github.com/twbs/bootstrap/blob/master/LICENSE target=_blank rel=license>MIT</a>, docs <a href=https://creativecommons.org/licenses/by/3.0/ target=_blank rel=license>CC BY 3.0</a>.</p>\n\
+		</div>\n\
+	</footer>\n\
+'
 var pages = {'/': 'index','/arduinosensors':'arduinosensors', '/kathmandu':'kathmandu', 
 					'/springfield':'springfield', '/meettheteam':'meettheteam'}
 
@@ -65,7 +78,7 @@ for (page in pages){
 	router.get(page, function(req, res, next) {
 		console.log('path requested: ' + req.originalUrl + '; page to be loaded: ' + pages[req.originalUrl]);
 		var cn = commonNavigation.replace(req.originalUrl, '#')
-		res.render(pages[req.originalUrl],{commonHeader: commonHeader, commonNavigation: cn});
+		res.render(pages[req.originalUrl],{commonHeader: commonHeader, commonNavigation: cn, commonFooter: commonFooter });
 	});
 }
 module.exports = router;
