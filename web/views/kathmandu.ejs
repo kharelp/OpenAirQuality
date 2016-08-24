@@ -46,30 +46,7 @@
 				</div>
 				<div class="col-sm-6">
 					<!-- Create a canvas for Web World Wind. -->
-					<canvas id="canvasOne" width="600" height="700"></canvas>
-					<!--Time Controls-->
-					<div class="interactive" style="position: absolute; top 65px; bottom: 0; width: 100%">
-						<!--Date/Time Buttons-->
-						<div id="timeControlButtons" style="width: 166px; margin-right: auto; margin-left: auto">
-							<div class="btn-group btn-group-sm interactive" role="group" style="float:bottom" aria-label="time controls">
-								<button id="time-fast-backward" type="button" class="btn btn-default repeatButton">
-									<span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
-								</button>
-								<button id="time-step-backward" type="button" class="btn btn-default repeatButton">
-									<span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
-								</button>
-								<button id="time-reset" type="button" class="btn btn-default" data-bind="click: onTimeReset, css:{active: autoUpdateTime}">
-									<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-								</button>
-								<button id="time-step-forward" type="button" class="btn btn-default repeatButton">
-									<span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
-								</button>
-								<button id="time-fast-forward" type="button" class="btn btn-default repeatButton">
-									<span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
-								</button>
-							</div>
-						</div>
-					</div>
+					<canvas id="canvasOne" width="600" height="700"></canvas>		
 				</div>
 			<div class="col-sm-3">
 					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/1.Pm2.5OverHour.png", height="175"></div>
@@ -151,9 +128,11 @@
 				
 					// Adjust the Navigator to place Kathmandu in the center of the Web World Window.
 					wwd.navigator.lookAtLocation.latitude = 27.708172;
-					wwd.navigator.lookAtLocation.longitude = 85.320029;
+					wwd.navigator.lookAtLocation.longitude = 85.315;
 					// Approx. 2 million meters above the ellipsoid
 					wwd.navigator.range = 1e4; 
+					// Tilt globe by 45 degrees for 3D view
+					wwd.navigator.tilt = 45;
 			
 					//PM2.5	
 					var aq = {
@@ -197,7 +176,7 @@
 							placemarkAttributes.imageScale = 30;
 							placemarkAttributes.imageColor = colorcode(aq[location][value_radiob][hour], value_radiob);  
 							var placemark = new WorldWind.Placemark(
-								new WorldWind.Position(aq[location].lat,aq[location].lon, 100),
+								new WorldWind.Position(aq[location].lat,aq[location].lon, 1500),
 								true,
 								placemarkAttributes
 							);

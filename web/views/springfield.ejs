@@ -133,12 +133,14 @@
 			// Adjust the Navigator to place Springfield in the center of the Web World Window.
 			wwd.navigator.lookAtLocation.latitude = 42.107821;   
 			wwd.navigator.lookAtLocation.longitude = -72.588895;    
-				// Approx. 2 million meters above the ellipsoid
-				wwd.navigator.range = 1e4; 
+				// Approx. 3000 meters above the ellipsoid
+				wwd.navigator.range = 3e3; 
+				// Tilt globe by 45 degrees for 3D view
+				wwd.navigator.tilt = 45;
 
 			//Ozone
 			var aq = {
-				'Trees': {'lat': 42.103475, 'lon': -72.591092,   
+				'Trees': {'lat': 42.103475, 'lon': -72.591092,  
 					'ozone': {'10h': 32.13295, '11h': 63.89776, '12h': 66.03314, '13h':  68.37934, '14h': 37.98264, '15h': 48.03839},
 					'carbonm': {'10h': 3.134553, '11h': 4.14836, '12h': 4.230732, '13h': 3.794387, '14h': 3.187332, '15h':3.367578}
 				},
@@ -156,10 +158,10 @@
 					
 			//Add a placemark at Trees, Springfield
 			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
+			placemarkAttributes.imageScale = 15;
 			placemarkAttributes.imageColor = colorcode(aq.Trees[value_radiob][hour],value_radiob);  
 			var placemark = new WorldWind.Placemark(
-				new WorldWind.Position(aq.Trees.lat,aq.Trees.lon,0),
+				new WorldWind.Position(aq.Trees.lat,aq.Trees.lon,50),
 				true,
 				placemarkAttributes
 			);
@@ -169,9 +171,10 @@
 		
 			//Add a placemark at NoTrees, Springfield
 			placemarkAttributes = new WorldWind.PlacemarkAttributes();
-			placemarkAttributes.imageScale = 30;
+			placemarkAttributes.imageScale = 15;
 			placemarkAttributes.imageColor = colorcode(aq.NoTrees[value_radiob][hour],value_radiob);  
 			var placemark = new WorldWind.Placemark(
+				new WorldWind.Position(aq.NoTrees.lat,aq.NoTrees.lon, 50),
 				true,
 				placemarkAttributes
 			);
