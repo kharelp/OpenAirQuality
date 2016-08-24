@@ -21,35 +21,32 @@
 		<%- commonNavigation %>
 		<div id = maincontent class="container-fluid">
 			<div class="col-sm-12">
-				<h1 id="subtitle"> Visualization of Air Pollution Data</h1>
+				<h1 id="subtitle">Air Quality</h1>
 				<h2 id="subtitle"> Kathmandu, Nepal</h2>
 			</div>
 			<div class=row>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="23" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
 					<span id='time'>0:00</span>
 					<form action="">
 						<input type="radio" name="airquality" value="pm25" checked>PM 2.5 <br>
 						<input type="radio" name="airquality" value="blackcarbon">Black Carbon<br>
 					</form>
-					// Graphs
-					<h2 id="subtitle"><div style="text-align: center; position: absolute; top: 1200px; left: 500px;"> Analyses of Kathmandu Air Pollution Data</div></h2>
-					<br>
-					<p><div style="text-align: center; position: absolute; top: 1250px; left: 500px;">Particulate Matter 2.5 by Hour</div></p>
-					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/1.Pm2.5OverHour.png", width="550" height="300"></div>
-					<br>
-					<p>Particulate Matter 2.5 by Location </p>	
-					<div style="text-align: ;"><img id="pic" alt="pic" src="/images/2.Pm2.5OverLocation.png", width="550" height="300"></div>
-					<br>
-					<p>Black Carbon by Hour </p>	
-					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/3.BCOverHour.png", width="550" height="300"></div>	
-					<br>
-					<p>Black Carbon by Location </p>	
-					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/4.BCOverLocation.png", width="550" height="300"></div>
+				<br><br>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					<h3 class="panel-title">Data Visualization Guide for Using WebWorldWind</h3>
+					</div>
+					<div class="panel-body">
+					The PM2.5 and BC data are visualized in an interactive WebWorldWind map using a time series slider bar. In the case of PM2.5,  green placemarks represent PM2.5 level equal to or below 50 µg/m3, yellow placemarks represent PM2.5 level between 51-100 µg/m3, and red placemarks represent any PM2.5 level equal to or above 101µg/m3. In the case of BC, light yellow placemarks represent BC level equal to or below 10,000 µg/m3, bright yellow placemarks represent BC level between 10,001-20,000 µg/m3, and orange placemarks represent any BC level equal to or above 20,000 µg/m3. 
+		  </div>
+        </div>
+					: 
+					
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-6">
 					<!-- Create a canvas for Web World Wind. -->
-					<canvas id="canvasOne" width="500" height="500"></canvas>
+					<canvas id="canvasOne" width="600" height="700"></canvas>
 					<!--Time Controls-->
 					<div class="interactive" style="position: absolute; top 65px; bottom: 0; width: 100%">
 						<!--Date/Time Buttons-->
@@ -73,6 +70,20 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			<div class="col-sm-3">
+					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/1.Pm2.5OverHour.png", height="175"></div>
+					<p>Particulate Matter 2.5 by Hour</p><br>
+
+					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/2.Pm2.5OverLocation.png", height="175"></div>
+					<p>Particulate Matter 2.5 by Location </p><br>
+
+					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/3.BCOverHour.png", height="175"></div>	
+					<p>Black Carbon by Hour</p><br>
+
+					<div style="text-align: center;"><img id="pic" alt="pic" src="/images/4.BCOverLocation.png", height="175"></div>
+					<p>Black Carbon by Location </p><br>	
+
 				</div>
 			</div>
 		
@@ -226,14 +237,28 @@
 		<div class="col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Video Documenting the Project</h3>
+              <h3 class="panel-title">Methods</h3>
             </div>
             <div class="panel-body">
-              A short 3 minute video will also be uploaded here
+            Prior to the development of the arduino sensors, data measuring PM2.5, black carbon and health indicators were collected from 53 traffic police volunteers using a proprietary air quality measuring device and spirometers. To account for seasonal differences in air pollutants, data were collected in two phases at six major locations within Kathmandu Valley: Balaju, Chabahil, Jawalakhel, Kalanki, Koteshwor, and Thapathali. The first phase was conducted in the dry season and the second phase was conducted in the rainy season. A total of 13 traffic police volunteers were present in both phases of data collection. Each traffic police volunteer’s PM2.5 and black carbon exposure-levels were recorded every five minutes throughout the 24 hour time period across both phases of data collection.  Data was collected based on the volunteers’ relative motion, time of the day, and general location on the streets -- all of which  provided wide spatial variability.<a href="http://journals.lww.com/joem/Abstract/publishahead/Respiratory_Effects_of_High_Levels_of_Particulate.99011.aspx"></a>
+						<figcaption>(Read a journal article to learn more)</figcaption> 
+			<br><br>
+			Using a statistical software, the collected data for all individuals were first appended separately for each phase by location. This data was further appended to combine both phases of data collection by location. This generated one large dataset with 85,758 observations that were unique by time, location, and data measurements. This rich dataset was then sorted by both location and hour to compute the average hourly PM2.5 and black carbon exposure levels among traffic police officers. This yielded 24 hourly observations for each location, with a total of 144 observations across the 6 locations. Finally, by employing an efficient function in JavaScript defined by air quality and time parameters, the hourly average data for PM2.5 and Black Carbon were imported and visualized using WebWorldWind.
             </div>
           </div>
         </div><!-- /.col-sm-4 -->
       </div>
+	  <div class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Results and Discussion</h3>
+            </div>
+            <div class="panel-body">
+			Overview: This study found that high levels of exposure to PM2.5 is associated with reduced lung function, and increased exposure to Black Carbon leads to reduced lung function among non-smokers. All findings were statistically significant. In both cases of PM2.5 and Black Carbon, there is a clear spatial pattern with higher levels of pollutant concentrations in the ring road surrounding Kathmandu Valley (Balaju, Chabahil) and relatively lower levels of concentrations inside the city (Jawalakhel, Thapathali).
+            <br><br>
+			The average PM2.5 over time resembles a double inverted U-shaped graph and peaks during the morning rush hour at 9 am. Average PM2.5 exposure levels are as high as approximately 160 µg/m3 during this hour. During the evening rush hour at 7 pm, the average PM2.5 exposure levels are slightly lower at approximately 110 µg/m3. Similarly, the average BC over time also resembles a double inverted U-shaped graph but peaks earlier during the morning rush hour at 7 am. Average BC exposure levels are as high as approximately 33,000 µg/m3 during this hour. During the evening rush hour, the average BC exposure levels peak at 5 pm and are slightly lower at almost 20,000 µg/m3. Both these measurements pose risky consequences of exposure on human health. 
+		  </div>
 			
 		</div>	<!-- maincontent -->
 	</body>

@@ -23,11 +23,11 @@
 		<%- commonNavigation %>
 		<div id = maincontent class="container-fluid">
 			<div class="col-sm-12">
-				<h1 id="subtitle"> Visualization of Air Pollution Data</h1>
-				<h2 id="subtitle"> Springfield, Massachusetts, USA</h2>
+				<h1 id="subtitle">Air Quality</h1>
+				<h2 id="subtitle">Springfield, Massachusetts, USA</h2>
 			</div>
 			<div class=row>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="10" data-slider-max="15" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
 						<span id='time'>0:00</span>
 					<form action="">
@@ -35,9 +35,9 @@
 						<input type="radio" name="airquality" value="carbonm">Carbon Monoxide<br>
 					</form>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-6">
 					<!-- Create a canvas for Web World Wind. -->
-					<canvas id="canvasOne" width="500" height="500"></canvas>
+					<canvas id="canvasOne" width="600" height="700"></canvas>
 
 					<!--Time Controls-->
 					<div class="interactive" style="position: absolute; top 65px; bottom: 0; width: 100%">
@@ -182,9 +182,8 @@
 			
 		}
 	}
-		
-						
 	</script>
+	
 		</div>
 	</body>
 </html>
