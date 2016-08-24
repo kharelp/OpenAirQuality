@@ -12,7 +12,12 @@ ul{text-align: center;}
 #maincontent{
 position: absolute;
 top: 50px;
+left: 20px;
+right: 20px;
 }
+
+
+
 .photoContent{
 	position: relative;
 	width: 100%;

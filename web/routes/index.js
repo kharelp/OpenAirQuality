@@ -33,6 +33,8 @@ var commonHeader= '<meta charset="utf-8"> \n\
 		<![endif]--> \n\
 		\n\
 		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css" /> \n\
+		<!--Bootstrap footer CSS --> \n\
+		<link href="/css/sticky-footer.css" rel="stylesheet">\n\
 '
 /*Header for Navigation Bar for every page*/
 var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
