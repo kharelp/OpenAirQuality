@@ -202,7 +202,7 @@
 		<div class="page-header">
       </div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-5">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Introduction</h3>
@@ -210,17 +210,16 @@
             <div class="panel-body">
 			Kathmandu Valley is a rapidly growing city with a population of almost 4 million people. The capital city of Nepal has witnessed rapid urbanization in the last few decades. Urban growth has been accompanied by unprecedented levels of air pollution. In the lack of well-maintained roads and poor regulations governing the usage of old motor vehicles, traffic-related emissions is a major source of air pollution in the city. This poses significant health problems to inhabitants, especially to traffic police officers who monitor busy road intersections with limited traffic signal devices. 
             <br><br>
-			In conjunction with Kathmandu Valley’s rapid urbanization, energy demands have surpassed the sector’s capacity to supply adequate electricity. To manage this crisis, Nepal Electricity Authority devised a policy of load shedding for several hours each day.  Since the onset of this policy, majority of the businesses and several households have adopted diesel run generators for backup power supply.  As a result of an increase in diesel combustion, traffic police officers in Kathmandu are particularly exposed to higher levels of black carbon (BC) and other particulate matters (PM2.5) in the air.  Our study therefore investigated the relationship between traffic related PM2.5 and BC exposures on individual health effects (Read more).</div>
+			In conjunction with Kathmandu Valley’s rapid urbanization, energy demands have surpassed the sector’s capacity to supply adequate electricity. To manage this crisis, Nepal Electricity Authority devised a policy of load shedding for several hours each day.  Since the onset of this policy, majority of the businesses and several households have adopted diesel run generators for backup power supply.  As a result of an increase in diesel combustion, traffic police officers in Kathmandu are particularly exposed to higher levels of black carbon (BC) and other particulate matters (PM2.5) in the air.  Our study therefore investigated the relationship between traffic related PM2.5 and BC exposures on individual health effects. <a href="https://www.youtube.com/watch?v=j4Ip4KI7sj8)"> (Watch a video to learn more).</a></div>
 		  </div>
         </div><!-- /.col-sm-4 -->
-		<div class="col-sm-6">
+		<div class="col-sm-7">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Methods</h3>
             </div>
             <div class="panel-body">
-            Prior to the development of the arduino sensors, data measuring PM2.5, black carbon and health indicators were collected from 53 traffic police volunteers using a proprietary air quality measuring device and spirometers. To account for seasonal differences in air pollutants, data were collected in two phases at six major locations within Kathmandu Valley: Balaju, Chabahil, Jawalakhel, Kalanki, Koteshwor, and Thapathali. The first phase was conducted in the dry season and the second phase was conducted in the rainy season. A total of 13 traffic police volunteers were present in both phases of data collection. Each traffic police volunteer’s PM2.5 and black carbon exposure-levels were recorded every five minutes throughout the 24 hour time period across both phases of data collection.  Data was collected based on the volunteers’ relative motion, time of the day, and general location on the streets -- all of which  provided wide spatial variability.<a href="http://journals.lww.com/joem/Abstract/publishahead/Respiratory_Effects_of_High_Levels_of_Particulate.99011.aspx"></a>
-						<figcaption>(Read a journal article to learn more)</figcaption> 
+            Prior to the development of the arduino sensors, data measuring PM2.5, black carbon and health indicators were collected from 53 traffic police volunteers using a proprietary air quality measuring device and spirometers. To account for seasonal differences in air pollutants, data were collected in two phases at six major locations within Kathmandu Valley: Balaju, Chabahil, Jawalakhel, Kalanki, Koteshwor, and Thapathali. The first phase was conducted in the dry season and the second phase was conducted in the rainy season. A total of 13 traffic police volunteers were present in both phases of data collection. Each traffic police volunteer’s PM2.5 and black carbon exposure-levels were recorded every five minutes throughout the 24 hour time period across both phases of data collection.  Data was collected based on the volunteers’ relative motion, time of the day, and general location on the streets -- all of which  provided wide spatial variability.<a href="http://journals.lww.com/joem/Abstract/publishahead/Respiratory_Effects_of_High_Levels_of_Particulate.99011.aspx">(Read a journal article to learn more).</a>
 			<br><br>
 			Using a statistical software, the collected data for all individuals were first appended separately for each phase by location. This data was further appended to combine both phases of data collection by location. This generated one large dataset with 85,758 observations that were unique by time, location, and data measurements. This rich dataset was then sorted by both location and hour to compute the average hourly PM2.5 and black carbon exposure levels among traffic police officers. This yielded 24 hourly observations for each location, with a total of 144 observations across the 6 locations. Finally, by employing an efficient function in JavaScript defined by air quality and time parameters, the hourly average data for PM2.5 and Black Carbon were imported and visualized using WebWorldWind.
             </div>
@@ -228,17 +227,30 @@
         </div><!-- /.col-sm-4 -->
       </div>
 	  <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-8">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Results and Discussion</h3>
+              <h3 class="panel-title">Results</h3>
             </div>
             <div class="panel-body">
 			Overview: This study found that high levels of exposure to PM2.5 is associated with reduced lung function, and increased exposure to Black Carbon leads to reduced lung function among non-smokers. All findings were statistically significant. In both cases of PM2.5 and Black Carbon, there is a clear spatial pattern with higher levels of pollutant concentrations in the ring road surrounding Kathmandu Valley (Balaju, Chabahil) and relatively lower levels of concentrations inside the city (Jawalakhel, Thapathali).
             <br><br>
 			The average PM2.5 over time resembles a double inverted U-shaped graph and peaks during the morning rush hour at 9 am. Average PM2.5 exposure levels are as high as approximately 160 µg/m3 during this hour. During the evening rush hour at 7 pm, the average PM2.5 exposure levels are slightly lower at approximately 110 µg/m3. Similarly, the average BC over time also resembles a double inverted U-shaped graph but peaks earlier during the morning rush hour at 7 am. Average BC exposure levels are as high as approximately 33,000 µg/m3 during this hour. During the evening rush hour, the average BC exposure levels peak at 5 pm and are slightly lower at almost 20,000 µg/m3. Both these measurements pose risky consequences of exposure on human health. 
 		  </div>
-			
+		  </div>
+		</div>
+		<div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Discussion</h3>
+            </div>
+            <div class="panel-body">
+			Our study showed a negative association between air pollutants such as PM2.5 and black carbon, and individual health measures. As a future step, we intend to further assess how the current load shedding policy in Kathmandu Valley affects the air quality that its citizens are subjected to. We will specifically test for whether Black Carbon is higher during specific times of the day in locations where there is load shedding. The overall goal of this future step is to understand how local municipal policy on load shedding affects geospatial and temporal air quality, as a result of  temporary increase in the use of diesel generators.
+		  </div>
+		  </div>
+		</div>
+	  </div>
 		</div>	<!-- maincontent -->
+	 <%-commonFooter%>
 	</body>
 </html>
