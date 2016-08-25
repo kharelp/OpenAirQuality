@@ -61,7 +61,7 @@ var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 '		
 var commonFooter= ' <footer class="footer">\n\
       <div class="container">\n\
-        <p class="text-muted">Place sticky footer content here.</p>\n\
+        <p class="text-muted"><a href="https://github.com/kharelp/UrbanAirQuality>GitHub</a></p>\n\
       </div>\n\
     </footer>\n\
 '
