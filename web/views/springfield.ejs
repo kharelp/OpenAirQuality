@@ -27,14 +27,71 @@
 			</div>
 			<div class=row>
 				<div class="col-sm-3">
-					<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="10" data-slider-max="15" data-slider-step="1" data-slider-value="0" data-slider-tooltip="hide"/>
-						<span id='time'>0:00</span>
-					<form action="">
-						<input type="radio" name="airquality" value="ozone" checked>Ozone <br>
-						<input type="radio" name="airquality" value="carbonm">Carbon Monoxide<br>
-					</form>
+				 <p>
+					<input id="ex1" data-slider-id='ex1Slider' type="text" 
+						data-slider-min="10" data-slider-max="15" data-slider-step="1" 
+						data-slider-value="0" data-slider-tooltip="hide"/>
+						&nbsp;<span id='time'>0:00</span><br />
+					<input type="radio" name="airquality" value="ozone" checked>Ozone <br>
+					<input type="radio" name="airquality" value="carbonm">Carbon Monoxide<br>
+				  </p>
+				  <br><br>
+					<div class="panel panel-default">
+					<div class="panel-heading">
+					<h3 class="panel-title">Legend: Springfield Air Quality</h3>
+					</div>
+					<div class="panel-body">
+					<table class = legend>
+						<thead>
+							<tr>
+								<th class = legendSymbol>Symbol</th>
+								<th>Ozone Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class = greenPm>&#x2B1B;</td>
+								<td>&le; 45</td>
+							</tr>
+							<tr>
+								<td class = yellowPm>&#x2B1B;</td>
+								<td>&gt; 45 and &le; 60</td>
+							</tr>
+							<tr>
+								<td class = redPm>&#x2B1B;</td>
+								<td>&gt; 60</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<table class = legend>
+						<thead>
+							<tr>
+								<th class = legendSymbol>Symbol</th>
+								<th>Carbon Monoxide Level</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class = lightyellowBc>&#x2B1B;</td>
+								<td>&le; 2.5</td>
+							</tr>
+							<tr>
+								<td class = brightyellowBc>&#x2B1B;</td>
+								<td>&gt; 2.5 and &le; 4</td>
+							</tr>
+							<tr>
+								<td class = orangeBc>&#x2B1B;</td>
+								<td>&gt; 4</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					</div>
 				</div>
-				<div class="col-sm-6">
+				
+				</div>
+				<div class="col-sm-9">
 					<!-- Create a canvas for Web World Wind. -->
 					<canvas id="canvasOne" width=600 height=700></canvas>
 
@@ -50,7 +107,7 @@
 		function colorcode(data, value_radiob){
 		var value_radiob = $('input:radio[name=airquality]:checked').val();
 			if (value_radiob=="ozone"){
-				var red=0; var green=0; var blue=0;
+				<!--var red=0; var green=0; var blue=0;-->
 				if (data<=45){
 					red=49/255; green=163/255; blue=84/255;
 					}
@@ -124,7 +181,7 @@
 
 		//Placing placemarks with air pollution data by hour
 	
-		placemarks('0h');
+		placemarks('10h');
 			function placemarks(hour){
 			var value_radiob = $('input:radio[name=airquality]:checked').val();
 					

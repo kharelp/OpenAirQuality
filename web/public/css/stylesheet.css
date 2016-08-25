@@ -25,6 +25,38 @@ height:700;
 text-align: center;
 }
 
+.legend td,.legend th{
+padding: 5px;
+}
+
+.legendSymbol, .greenPm, .yellowPm, .redPm, .lightyellowBc, .brightyellowBc, .orangeBc{
+text-align: center;	
+}
+
+.greenPm{
+color:rgb(49, 163, 84)
+}
+
+.yellowPm{
+color:rgb(254, 196, 79)
+}
+
+.redPm{
+color:rgb(240, 59, 32)
+}
+
+.lightyellowBc{
+color:rgb(255, 247, 188)
+}
+
+.brightyellowBc{
+color:rgb(254, 196, 79)
+}
+
+.orangeBc{
+color: rgb(217, 95, 14) 
+}
+
 .photoContent{
 	position: relative;
 	width: 100%;
