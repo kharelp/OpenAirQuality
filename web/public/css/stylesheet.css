@@ -16,7 +16,14 @@ left: 20px;
 right: 20px;
 }
 
+#canvasOne{
+width:600;
+height:700;
+}
 
+#mapContainer{
+text-align: center;
+}
 
 .photoContent{
 	position: relative;
