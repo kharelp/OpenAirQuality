@@ -17,6 +17,14 @@ right: 20px;
 padding-bottom: 80px;
 }
 
+#ktmcontent{
+position: absolute;
+top: 50px;
+left: 80px;
+right: 80px;
+padding-bottom: 80px;
+}
+
 #ex1Slider .slider-selection {
 	background: #BABABA;
 }
