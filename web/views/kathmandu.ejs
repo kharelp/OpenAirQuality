@@ -84,11 +84,6 @@
 					
 					</div>
 				</div>
-					
-				<br><br><br>
-				<p>
-					<b>Scroll down for the full results of our analysis &darr;</b>
-				</p>	
 				</div>
 				<div class="col-sm-9">
 					<!-- Create a canvas for Web World Wind. -->
@@ -100,6 +95,20 @@
 			<script>
 	
 				var slider = new Slider('#ex1', { });
+				
+				
+				// Displays instructions to scroll down for results, if results section is not on page 
+				window.onscroll = function() {
+					var pageBottom = $(window).scrollTop() + $(window).height();
+					var elementTop = $('#results-intro').offset().top;
+
+					
+					if (elementTop < pageBottom) {
+						$('.scroll-down-instructions').hide();
+					  } else {
+						$('.scroll-down-instructions').show();
+				      }
+				}
 			
 		
 				function colorcode(data, value_radiob)
@@ -251,7 +260,7 @@
         <div class="col-sm-5"> 
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Introduction</h3>
+              <h3 class="panel-title" id="results-intro">Introduction</h3>
             </div>
             <div class="panel-body">
 			Kathmandu Valley is a rapidly growing city with a population of almost 4 million people. The capital city of Nepal has witnessed rapid urbanization in the last few decades. Urban growth has been accompanied by unprecedented levels of air pollution. In the lack of well-maintained roads and poor regulations governing the usage of old motor vehicles, traffic-related emissions is a major source of air pollution in the city. This poses significant health problems to inhabitants, especially to traffic police officers who monitor busy road intersections with limited traffic signal devices. 
@@ -298,6 +307,7 @@
 		  </div>
 		</div>
 	  </div>
+		 <div class="scroll-down-instructions">&darr; Scroll down for the full results of our analysis &darr;</div>
 		</div>	<!-- maincontent -->
 	 <%-commonFooter%>
 	</body>
