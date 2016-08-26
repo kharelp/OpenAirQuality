@@ -44,6 +44,7 @@ padding: 5px;
 
 .legendSymbol, .greenPm, .yellowPm, .redPm, .lightyellowBc, .brightyellowBc, .orangeBc{
 text-align: center;	
+font-size: 1.5em;
 }
 
 .greenPm{
