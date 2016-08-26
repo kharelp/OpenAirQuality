@@ -42,9 +42,15 @@ text-align: center;
 padding: 5px;
 }
 
-.legendSymbol, .greenPm, .yellowPm, .redPm, .lightyellowBc, .brightyellowBc, .orangeBc{
-text-align: center;	
-font-size: 1.5em;
+.legendSymbol
+{
+	text-align: center;	
+}
+
+.greenPm, .yellowPm, .redPm, .lightyellowBc, .brightyellowBc, .orangeBc
+{
+	text-align: center;	
+	font-size: 1.5em;
 }
 
 .greenPm{
