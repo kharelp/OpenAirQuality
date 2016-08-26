@@ -17,6 +17,10 @@ right: 20px;
 padding-bottom: 80px;
 }
 
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
 #canvasOne{
 width:600;
 height:700;
@@ -81,6 +85,17 @@ color: rgb(217, 95, 14)
 	left:45%;
 }
 
+.www-attribution {
+	position: relative;
+	top: -22px;
+	left: 370px;
+	color: #d9d9d9;
+	font-size: 10px;
+}
+.www-attribution a {
+	color:#d9d9d9;
+	text-decoration: underline;
+}
 
 img {
         height: 100px;
