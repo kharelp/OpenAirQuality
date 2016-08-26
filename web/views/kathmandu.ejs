@@ -30,99 +30,96 @@
 						<input type="radio" name="airquality" value="pm25" checked> PM 2.5 <br>
 						<input type="radio" name="airquality" value="blackcarbon"> Black Carbon<br>
 					</p>
-				<br><br>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-					<h3 class="panel-title">Legend: Kathmandu Air Quality</h3>
-					</div>
-					<div class="panel-body">
-					<table class = legend>
-						<thead>
-							<tr>
-								<th class = legendSymbol>Symbol</th>
-								<th>Particulate Matter 2.5 (&micro;g/m<sup>3</sup>)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class = greenPm>&#x25A0;</td>
-								<td>&le; 50</td>
-							</tr>
-							<tr>
-								<td class = yellowPm>&#x25A0;</td>
-								<td>&gt; 50 and &le; 100</td>
-							</tr>
-							<tr>
-								<td class = redPm>&#x25A0;</td>
-								<td>&gt; 100</td>
-							</tr>
-						</tbody>
-					</table>
-					<br>
-					<table class = legend>
-						<thead>
-							<tr>
-								<th class = legendSymbol>Symbol</th>
-								<th>Black Carbon Level (&micro;g/m<sup>3</sup>)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class = lightyellowBc>&#x25A0;</td>
-								<td>&le; 10000</td>
-							</tr>
-							<tr>
-								<td class = brightyellowBc>&#x25A0;</td>
-								<td>&gt; 10000 and &le; 20000</td>
-							</tr>
-							<tr>
-								<td class = orangeBc>&#x25A0;</td>
-								<td>&gt; 20000</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					</div>
-				</div>
-				</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Legend: Kathmandu Air Quality</h3>
+						</div>
+						<div class="panel-body">
+							<table class = legend>
+								<thead>
+									<tr>
+										<th class = legendSymbol>Symbol</th>
+										<th>Particulate Matter 2.5 (&micro;g/m<sup>3</sup>)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class = greenPm>&#x25A0;</td>
+										<td>&le; 50</td>
+									</tr>
+									<tr>
+										<td class = yellowPm>&#x25A0;</td>
+										<td>&gt; 50 and &le; 100</td>
+									</tr>
+									<tr>
+										<td class = redPm>&#x25A0;</td>
+										<td>&gt; 100</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+							<table class = legend>
+								<thead>
+									<tr>
+										<th class = legendSymbol>Symbol</th>
+										<th>Black Carbon Level (&micro;g/m<sup>3</sup>)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class = lightyellowBc>&#x25A0;</td>
+										<td>&le; 10000</td>
+									</tr>
+									<tr>
+										<td class = brightyellowBc>&#x25A0;</td>
+										<td>&gt; 10000 and &le; 20000</td>
+									</tr>
+									<tr>
+										<td class = orangeBc>&#x25A0;</td>
+										<td>&gt; 20000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>	<!-- class="panel-body" -->
+					</div>	<!-- class="panel panel-default" -->
+				</div>	<!--  class="col-sm-3" -->
 				<div class="col-sm-6">
 					<!-- Create a canvas for Web World Wind. -->
 					<canvas id="canvasOne" width=600 height=700></canvas>	
 					<div class="www-attribution">Built with NASA's <a href="https://webworldwind.org/" target="_blank">Web World Wind</a></div>
 				</div>
 				<div class="col-sm-3">
-				<br><br><br><br><br><br><br><br>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-					<h3 class="panel-title">Statistical Mean</h3>
-					</div>
-					<div class="panel-body">
-				<table class = legend>
-						<thead>
-							<tr>
-								<th class = legendSymbol>Location</th>
-								<th>Particulate Matter 2.5 (&micro;g/m<sup>3</sup>)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Balaju</td>
-								<td>&le; 50</td>
-							</tr>
-							<tr>
-								<td class = yellowPm>&#x2B1B;</td>
-								<td>&gt; 50 and &le; 100</td>
-							</tr>
-							<tr>
-								<td class = redPm>&#x2B1B;</td>
-								<td>&gt; 100</td>
-							</tr>
-						</tbody>
-					</table>
-					</div>
-					</div>
-					</div>
-			</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Statistical Mean</h3>
+						</div>
+						<div class="panel-body">
+							<table class = legend>
+								<thead>
+									<tr>
+										<th class = legendSymbol>Location</th>
+										<th>Particulate Matter 2.5 (&micro;g/m<sup>3</sup>)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Balaju</td>
+										<td>&le; 50</td>
+									</tr>
+									<tr>
+										<td class = yellowPm>&#x2B1B;</td>
+										<td>&gt; 50 and &le; 100</td>
+									</tr>
+									<tr>
+										<td class = redPm>&#x2B1B;</td>
+										<td>&gt; 100</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>	<!-- class="panel-body" -->
+					</div>	<!--  class="panel panel-default" -->
+				</div>	<!-- class="col-sm-3" -->
+			</div>	<!-- class=row -->
 		
 			<script>
 	
@@ -284,7 +281,8 @@
 		<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/34.embed"></iframe>
 		<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/36.embed"></iframe>
 		<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/35.embed"></iframe>
-		<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/37.embed"></iframe></div>
+		<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/37.embed"></iframe>
+		</div>
 		
 		<div class="page-header">
       </div>
