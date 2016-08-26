@@ -98,6 +98,7 @@
 			<script>
 	
 				var slider = new Slider('#ex1', { });
+			
 		
 				function colorcode(data, value_radiob)
 				{
@@ -150,11 +151,17 @@
 					wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
 					wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 		
-					//Making the slider change the data by hour
+					// Making the slider change the data by hour
 					slider.on('change', function(data) {
 						var hour=data.newValue+'h';
 						placemarks(hour);
 						$('#time').text(data.newValue + ':00');
+					});
+					
+					// Making radio buttons change data when clicked, based on current value of slider
+					$('input:radio[name=airquality]').on('change', function() {
+						var hour=$('#ex1').val()+'h';
+						placemarks(hour);
 					});
 				
 					// Adjust the Navigator to place Kathmandu in the center of the Web World Window.
