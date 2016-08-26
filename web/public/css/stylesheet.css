@@ -93,6 +93,10 @@ color: rgb(217, 95, 14)
   max-width: none;
 }
 
+.carousel-caption {
+	text-shadow: 2px 2px black, -2px -2px black;
+}
+
 .footer-left {
 	position: absolute;
 	top:10px;
