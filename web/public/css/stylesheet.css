@@ -97,6 +97,17 @@ color: rgb(217, 95, 14)
 	text-decoration: underline;
 }
 
+.scroll-down-instructions {
+	position: fixed;
+	bottom: 5px;
+	left:20px;
+	color: white;
+	text-decoration: bold;
+	z-index: 5000;
+	font-size: 12px;
+	white-space:nowrap;
+	
+}
 img {
         height: 100px;
         width: 100px;
