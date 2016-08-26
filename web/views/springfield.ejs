@@ -16,7 +16,7 @@
 
 	<body id ="home">
 		<%- commonNavigation %>
-		<div id = maincontent class="container-fluid">
+		<div id = mapcontent class="container-fluid">
 			<div class="col-sm-12">
 				<h2 id="subtitle">Air Quality in Springfield, Massachusetts, USA</h2>
 			</div>
@@ -86,11 +86,43 @@
 					</div>
 				</div>
 				</div>
-				<div class="col-sm-9">
+				<div class="col-sm-6">
 					<!-- Create a canvas for Web World Wind. -->
 					<canvas id="canvasOne" width=600 height=700></canvas>
 					<div class="www-attribution">Built with NASA's <a href="https://webworldwind.org/" target="_blank">Web World Wind</a></div>
 				</div>
+				<div class="col-sm-3">
+				<br><br><br><br><br><br><br><br>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					<h3 class="panel-title">Statistical Mean</h3>
+					</div>
+					<div class="panel-body">
+				<table class = legend>
+						<thead>
+							<tr>
+								<th class = legendSymbol>Location</th>
+								<th>Ozone Level (Dobson Units) (&micro;g/m<sup>3</sup>)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>With Trees</td>
+								<td>&le; 50</td>
+							</tr>
+							<tr>
+								<td class = yellowPm>&#x2B1B;</td>
+								<td>&gt; 50 and &le; 100</td>
+							</tr>
+							<tr>
+								<td class = redPm>&#x2B1B;</td>
+								<td>&gt; 100</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					</div>
+					</div>
             </div>
                     
 
