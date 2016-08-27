@@ -2,7 +2,7 @@
 /*
 
 Arduino Air Sensors' code
-License GPLv3
+License GNU GPL v3
 
 
 Two gas sensors:
