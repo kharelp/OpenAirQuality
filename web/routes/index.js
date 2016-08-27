@@ -18,7 +18,7 @@ var commonHeader= '<meta charset="utf-8"> \n\
 	    <script src="/js/bootstrap.min.js"></script> \n\
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> \n\
 		<script src="/js/ie10-viewport-bug-workaround.js"></script> \n\
- 	\n\
+ \n\
 		<!-- Bootstrap core CSS --> \n\
 		<link href="/css/bootstrap.min.css" rel="stylesheet" /> \n\
 		<!-- Bootstrap theme --> \n\
@@ -32,9 +32,10 @@ var commonHeader= '<meta charset="utf-8"> \n\
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> \n\
 		<![endif]--> \n\
 		\n\
-		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css" /> \n\
 		<!--Bootstrap footer CSS --> \n\
 		<link href="/css/sticky-footer.css" rel="stylesheet">\n\
+ \n\
+		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css" /> \n\
 '
 /*Header for Navigation Bar for every page*/
 var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
