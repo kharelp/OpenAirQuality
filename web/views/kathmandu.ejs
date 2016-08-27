@@ -17,10 +17,10 @@
 		<%- commonNavigation %>
 		<div id = mapcontent class="container-fluid">
 			<div class="col-sm-12">
-				<h2 id="subtitle">Air Quality in Kathmandu, Nepal</h2>
+				<h2 id="subtitle">Air Quality in Kathmandu, Nepal<br/><br/></h2>
 			</div>
 			<div class=row>
-				<div class="col-sm-3">
+				<div class="col-sm-4">
 					<p>
 						<b>Drag slider to see daily cycle of air quality</b><br><br>
 						<input id="ex1" data-slider-id='ex1Slider' type="text" 
@@ -30,6 +30,7 @@
 						<input type="radio" name="airquality" value="pm25" checked> PM 2.5 <br>
 						<input type="radio" name="airquality" value="blackcarbon"> Black Carbon<br>
 					</p>
+					<br/><br/>
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">Legend: Kathmandu Air Quality</h3>
@@ -39,7 +40,7 @@
 								<thead>
 									<tr>
 										<th class = legendSymbol>Symbol</th>
-										<th>Particulate Matter 2.5 (&micro;g/m<sup>3</sup>)</th>
+										<th>Particulate Matter 2.5 Level(&micro;g/m<sup>3</sup>)</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -82,43 +83,12 @@
 							</table>
 						</div>	<!-- class="panel-body" -->
 					</div>	<!-- class="panel panel-default" -->
-				</div>	<!--  class="col-sm-3" -->
-				<div class="col-sm-6">
+				</div>	<!--  class="col-sm-4" -->
+				<div class="col-sm-8" style="text-align: center;">
 					<!-- Create a canvas for Web World Wind. -->
 					<canvas id="canvasOne" width=600 height=700></canvas>	
-					<div class="www-attribution">Built with NASA's <a href="https://webworldwind.org/" target="_blank">Web World Wind</a></div>
+					<div class="www-attribution" style="text-align: left;">Built with NASA's <a href="https://webworldwind.org/" target="_blank">Web World Wind</a></div>
 				</div>
-				<div class="col-sm-3">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">Statistical Mean</h3>
-						</div>
-						<div class="panel-body">
-							<table class = legend>
-								<thead>
-									<tr>
-										<th class = legendSymbol>Location</th>
-										<th>Particulate Matter 2.5 (&micro;g/m<sup>3</sup>)</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Balaju</td>
-										<td>&le; 50</td>
-									</tr>
-									<tr>
-										<td class = yellowPm>&#x2B1B;</td>
-										<td>&gt; 50 and &le; 100</td>
-									</tr>
-									<tr>
-										<td class = redPm>&#x2B1B;</td>
-										<td>&gt; 100</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>	<!-- class="panel-body" -->
-					</div>	<!--  class="panel panel-default" -->
-				</div>	<!-- class="col-sm-3" -->
 			</div>	<!-- class=row -->
 		
 			<script>
@@ -277,7 +247,7 @@
 				}
 			</script>
 			
-<div class="panel panel-default">
+			<div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Interactive Graphs</h3>
             </div>
@@ -355,8 +325,8 @@
 		  </div>
 		</div>
 	  </div>
-		 <div class="scroll-down-instructions">&darr; Scroll down for the full results of our analysis &darr;</div>
-		</div>	<!-- maincontent -->
+		 <div class="scroll-down-instructions"><p>&darr; Scroll down for the full results of our analysis &darr;</p></div>
+		</div>	<!-- mapcontent -->
 	 <%-commonFooter%>
 	</body>
 </html>

@@ -16,7 +16,7 @@ body {
   bottom: -1px;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 30px;
+  height: 35px;
   background-color: #000000;
   color: white;
   z-index: 1000;
