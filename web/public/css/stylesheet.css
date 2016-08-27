@@ -12,8 +12,8 @@ ul{text-align: center;}
 #maincontent{
 position: absolute;
 top: 50px;
-left: 20px;
-right: 20px;
+left: 10px;
+right: 10px;
 padding-bottom: 80px;
 }
 
@@ -83,6 +83,9 @@ color: rgb(217, 95, 14)
     top: 50px;
 	image align: center
 }
+
+#video-container { position: relative; width: 100%; height: 0; padding-bottom: 56.4%; }
+#video { position: absolute; left: 3%; top: 5%; width: 94%; height: 90%; }
 
 .footer-left {
 	position: absolute;
