@@ -1,7 +1,8 @@
 
 /*
 
-Jack's code
+Arduino Air Sensors' code
+License GPLv3
 
 
 Two gas sensors:
