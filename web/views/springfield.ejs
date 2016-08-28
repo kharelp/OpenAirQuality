@@ -18,20 +18,21 @@
 		<%- commonNavigation %>
 		<div id = mapcontent class="container-fluid">
 			<div class="col-sm-12">
-				<h2 id="subtitle">Air Quality in Springfield, Massachusetts, USA<br/><br/></h2>
+				<h2 id="subtitle">Air Quality in Springfield, Massachusetts, USA</h2>
 			</div>
 			<div class=row style=text-align:justify;>
 				<div class="col-sm-4">
+				 <h5>
+					Drag slider to see change in air quality over collection period
+				 </h5>
 				 <p>
-					<b>Drag slider to see change in air quality <br/>over collection period</b><br><br>
-					<input id="ex1" data-slider-id='ex1Slider' type="text" 
+					&nbsp;&nbsp;<input id="ex1" data-slider-id='ex1Slider' type="text" 
 						data-slider-min="10" data-slider-max="15" data-slider-step="1" 
 						data-slider-value="0" data-slider-tooltip="hide"/>
-						&nbsp;<span id='time'>10:00</span><br />
-					<input type="radio" name="airquality" value="ozone" checked> Ozone <br>
-					<input type="radio" name="airquality" value="carbonm"> Carbon Monoxide<br>
+						&nbsp;&nbsp;<span id='time'>10:00</span><br />
+					<input type="radio" name="airquality" value="ozone" checked> Ozone <br />
+					<input type="radio" name="airquality" value="carbonm"> Carbon Monoxide<br />
 				  </p>
-				  <br><br>
 					<div class="panel panel-default">
 					<div class="panel-heading">
 					<h3 class="panel-title">Legend: Springfield Air Quality</h3>
@@ -59,7 +60,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<br>
+					<p>&nbsp;</p>
 					<table class = legend>
 						<thead>
 							<tr>
@@ -255,9 +256,11 @@
               <h3 class="panel-title"  id="results-intro">Introduction</h3>
             </div>
             <div class="panel-body">
-			Exposures to traffic pollution can have adverse consequences on an individual’s health. In the US context, such health consequences are even more pronounced in the state of Massachusetts, according to the Center for Diseases Control and Prevention. Springfield is the third largest city in Massachusetts situated in the western part of New England. In 2010, the metropolitan area had a population of approximately 700,000 people. According to a news <a href="http://www.masslive.com/living/index.ssf/2012/06/many_triggers_for_asthmas_rise_in_the_northeast.html">article</a> published in 2012, childhood asthma rate in Springfield was as high as 17%, higher than both the state and national averages.
-            <br><br>
-			Given the high rates of childhood asthma prevalence in Springfield, our study investigated the role of urban trees in improving air quality caused by traffic pollution. <strong>Our specific hypothesis to be tested was: After controlling for traffic exposure, an urban park with trees will have better air quality (lower levels of carbon monoxide and ozone) than an urban park without trees.</strong> By employing <a href="http://openairquality.eco.umass.edu/arduinosensors">Arduino sensors</a> developed by UMass Amherst students, we collected data on ozone and carbon monoxide in two unique locations to assess whether the City of Springfield should invest in more urban tree planting in an effort to provide cleaner air for their citizens. One goal of this project was to start a citizen science effort: specifically, to teach Springfield urban youth about open source air sensors and have them help collect data in parks they sometimes visit.
+				<p>
+					Exposures to traffic pollution can have adverse consequences on an individual’s health. In the US context, such health consequences are even more pronounced in the state of Massachusetts, according to the Center for Diseases Control and Prevention. Springfield is the third largest city in Massachusetts situated in the western part of New England. In 2010, the metropolitan area had a population of approximately 700,000 people. According to a news <a href="http://www.masslive.com/living/index.ssf/2012/06/many_triggers_for_asthmas_rise_in_the_northeast.html">article</a> published in 2012, childhood asthma rate in Springfield was as high as 17%, higher than both the state and national averages.
+				</p><p>
+					Given the high rates of childhood asthma prevalence in Springfield, our study investigated the role of urban trees in improving air quality caused by traffic pollution. <strong>Our specific hypothesis to be tested was: After controlling for traffic exposure, an urban park with trees will have better air quality (lower levels of carbon monoxide and ozone) than an urban park without trees.</strong> By employing <a href="http://openairquality.eco.umass.edu/arduinosensors">Arduino sensors</a> developed by UMass Amherst students, we collected data on ozone and carbon monoxide in two unique locations to assess whether the City of Springfield should invest in more urban tree planting in an effort to provide cleaner air for their citizens. One goal of this project was to start a citizen science effort: specifically, to teach Springfield urban youth about open source air sensors and have them help collect data in parks they sometimes visit.
+				</p>
 		  </div>
 		</div>
         </div><!-- /.col-sm-5 -->
@@ -269,24 +272,26 @@
               <h3 class="panel-title">Data Collection</h3>
             </div>
             <div class="panel-body">
-			<strong><i>High School Kids Trained:</strong></i>:
-			<br/><br/>
-			<a href = "http://www.makeitspringfield.org/">Make-It Springfield</a> is a community driven creativity center located on Worthington Street in Downtown Springfield. Any member of the community can go for workshops on art, technology, and a variety of other useful skills and hobbies.  Portions of our NASA Europa Challenge team put on a workshop for Springfield youth at Make-it Springfield focusing on the basics of the Arduino board and Arduino coding and on the development of the Arduino Air Quality Sensor (see main menu). We also promoted the NASA World Wind Open City Smart air quality project to expose the idea of urban smart cities and, more broadly, the idea of citizen science.  Under our team’s direction, the high schoolers began to learn about Arduino’s by writing  software which made an LED light blink at whatever frequency they set.  They also helped to assemble the Arduino air sensors which would be used in the field by wiring the air sensors to the Arduino board.  
-            Later in the week, team members took some of the Springfield high school youth out into the streets of Springfield to deploy the Arduino-based air sensors.  These youths visited two urban park locations, set up the devices and watched as the devices collected data on carbon monoxide and ozone. The city high school youths were amazed that the machines they had just assembled a few days earlier were now gathering scientific data.
-			<br><br>
-			<strong><i>Location Chosen:</strong></i>
-			<br/><br/>
-			To test the hypothesis that urban trees influence air quality, we selected two urban park locations, one with significant tree canopy, the other without. The two parks were carefully selected because of their similar traffic patterns and difference in green space.  Both locations were on the corner of Main Street and Bridge Street in downtown Springfield.  They were located diagonally across from each other, in an effort to control for the amount of traffic exposure between the two parks.  Main Street is one of the most frequently used roads in Springfield.  With so many cars emitting harmful pollutants into the air, Main Street may have the worst air quality in Western Massachusetts. 
-			We chose the following two locations: <strong>Location 1</strong> – An urban park with ample shade, trees, and grass.  Data would be collected under a tree in the shade; <strong>Location 2</strong> – A courtyard outside a municipal building on 1550 Main Street.  Data would be collected in the sun away from any grass or shade.
-			<br><br>
-			<strong><i>Deployment:</strong></i>
-			<br/><br/>
-			Members of our UMass Europa Challenge team, often with Springfield high school youth, would meet at the park location usually during mid-day.  Some days, team members would split up and log data at two different locations. Other days, the team would stay together and use multiple sensors at the same location.  This was done because on the days the team was together, they could compare machines and see the differences in data from each machine.  On days they were separated, they could compare the data from each location and check for trends.  The team recorded data six separate days.
-			To start collecting data, a team member would plug the Arduino into a laptop and run the software. The process involved waiting twenty minutes for the machine to warm up and calibrate.  
-			<br/><br/>
-			Data would then be collected using a software program called “Cool Term” which saves the data as it is collected.  Data could only be collected for about two hours before the machines began to heat up too much and skew the data.  The Arduino would have to be unplugged for at least 30 minutes before the team member could again begin the process of warming up the machine to collect more data.
-			The placement of the machine was critical to the integrity of the results.  Data taken in the park would be taken in the shade in order to fully represent the impact of the trees in the data.  On the same token, data from the courtyard would be taken in direct sunlight.  Another important factor was reducing the effects of wind.  The Arduinos would be placed in an open box, the sensors would still receive air flow, but would shield the sensors from the wind. With the data collected, it was then time to analyze and map using NASA Web World Wind (visualized above).
-			<br/><br/>
+				<h5>High School Kids Trained</h5>
+				<p>
+					<a href = "http://www.makeitspringfield.org/">Make-It Springfield</a> is a community driven creativity center located on Worthington Street in Downtown Springfield. Any member of the community can go for workshops on art, technology, and a variety of other useful skills and hobbies.  Portions of our NASA Europa Challenge team put on a workshop for Springfield youth at Make-it Springfield focusing on the basics of the Arduino board and Arduino coding and on the development of the Arduino Air Quality Sensor (see main menu). We also promoted the NASA World Wind Open City Smart air quality project to expose the idea of urban smart cities and, more broadly, the idea of citizen science.  Under our team’s direction, the high schoolers began to learn about Arduino’s by writing  software which made an LED light blink at whatever frequency they set.  They also helped to assemble the Arduino air sensors which would be used in the field by wiring the air sensors to the Arduino board.  
+				</p><p>
+					Later in the week, team members took some of the Springfield high school youth out into the streets of Springfield to deploy the Arduino-based air sensors.  These youths visited two urban park locations, set up the devices and watched as the devices collected data on carbon monoxide and ozone. The city high school youths were amazed that the machines they had just assembled a few days earlier were now gathering scientific data.
+				</p>
+				<h5>Location Chosen</h5>
+				<p>
+					To test the hypothesis that urban trees influence air quality, we selected two urban park locations, one with significant tree canopy, the other without. The two parks were carefully selected because of their similar traffic patterns and difference in green space.  Both locations were on the corner of Main Street and Bridge Street in downtown Springfield.  They were located diagonally across from each other, in an effort to control for the amount of traffic exposure between the two parks.  Main Street is one of the most frequently used roads in Springfield.  With so many cars emitting harmful pollutants into the air, Main Street may have the worst air quality in Western Massachusetts. 
+				</p><p>
+					We chose the following two locations: <strong>Location 1</strong> – An urban park with ample shade, trees, and grass.  Data would be collected under a tree in the shade; <strong>Location 2</strong> – A courtyard outside a municipal building on 1550 Main Street.  Data would be collected in the sun away from any grass or shade.
+				</p>
+				<h5>Deployment</h5>
+				<p>
+					Members of our UMass Europa Challenge team, often with Springfield high school youth, would meet at the park location usually during mid-day.  Some days, team members would split up and log data at two different locations. Other days, the team would stay together and use multiple sensors at the same location.  This was done because on the days the team was together, they could compare machines and see the differences in data from each machine.  On days they were separated, they could compare the data from each location and check for trends.  The team recorded data six separate days.
+				</p><p>
+					To start collecting data, a team member would plug the Arduino into a laptop and run the software. The process involved waiting twenty minutes for the machine to warm up and calibrate. Data would then be collected using a software program called “Cool Term” which saves the data as it is collected.  Data could only be collected for about two hours before the machines began to heat up too much and skew the data.  The Arduino would have to be unplugged for at least 30 minutes before the team member could again begin the process of warming up the machine to collect more data.
+				</p><p>
+					The placement of the machine was critical to the integrity of the results.  Data taken in the park would be taken in the shade in order to fully represent the impact of the trees in the data.  On the same token, data from the courtyard would be taken in direct sunlight.  Another important factor was reducing the effects of wind.  The Arduinos would be placed in an open box, the sensors would still receive air flow, but would shield the sensors from the wind. With the data collected, it was then time to analyze and map using NASA Web World Wind (visualized above).
+				</p>
 			</div>
           </div>
         </div><!-- /.col-sm-4 -->
@@ -299,9 +304,11 @@
               <h3 class="panel-title">Methods</h3>
             </div>
             <div class="panel-body">
-			Air quality data was collected using Arduino sensors through several days of June and July this summer. Each data collection session lasted for anywhere between 40 to 75 minutes and several sessions were conducted each day. Ozone and carbon monoxide data were collected every five seconds.  Similar to the case of Kathmandu valley, data was collected based on the collectors’ relative motion, time of the day, and general positioning in either of the two locations.
-            <br><br>
-			The collected data from the two locations were also appended to generate one large dataset with approximately 6,500 observations. The dataset was then sorted by both location and hour to compute the average hourly ozone and carbon monoxide level in the atmosphere. This yielded 6 hourly observations from 10 am to 3 pm for each location for both ozone and carbon monoxide, with a total of 24 observations between the 2 locations. Finally, by employing an efficient function in JavaScript defined by air quality and time parameters, the hourly average data for ozone and carbon monoxide were also imported and visualized using Web World Wind.<br/><br/><br/>
+				<p>
+					Air quality data was collected using Arduino sensors through several days of June and July this summer. Each data collection session lasted for anywhere between 40 to 75 minutes and several sessions were conducted each day. Ozone and carbon monoxide data were collected every five seconds.  Similar to the case of Kathmandu valley, data was collected based on the collectors’ relative motion, time of the day, and general positioning in either of the two locations.
+				</p><p>
+					The collected data from the two locations were also appended to generate one large dataset with approximately 6,500 observations. The dataset was then sorted by both location and hour to compute the average hourly ozone and carbon monoxide level in the atmosphere. This yielded 6 hourly observations from 10 am to 3 pm for each location for both ozone and carbon monoxide, with a total of 24 observations between the 2 locations. Finally, by employing an efficient function in JavaScript defined by air quality and time parameters, the hourly average data for ozone and carbon monoxide were also imported and visualized using Web World Wind.
+				</p>
 		  </div>
 		  </div>
 		</div>
@@ -326,9 +333,11 @@
               <h3 class="panel-title">Results</h3>
             </div>
             <div class="panel-body">
-			Our research confirmed our hypothesis that <strong>the urban park with trees in Springfield had lower levels of ozone and carbon monoxide compared to the location without trees.</strong> On an average, the location with trees exhibited 50 Dobson units of ozone while the other location exhibited 59 Dobson units of ozone. Similarly, on an average, location with trees exhibited 3.06 ppm of carbon monoxide while the other location exhibited 4.35 ppm of carbon monoxide. The ozone and carbon monoxide data are also visualized in an interactive Web World Wind map using a time series slider bar.
-            <br><br>
-			The graphs above also indicate that the levels of ozone and carbon monoxide are higher in location without trees from 11 am to 3 pm.  However, in both cases of ozone and carbon monoxide, there is an exception at 10 am where both the pollutants are counterintuitively higher at the location with trees. Our future work will investigate potential cause behind this anomaly.
+				<p>
+					Our research confirmed our hypothesis that <strong>the urban park with trees in Springfield had lower levels of ozone and carbon monoxide compared to the location without trees.</strong> On an average, the location with trees exhibited 50 Dobson units of ozone while the other location exhibited 59 Dobson units of ozone. Similarly, on an average, location with trees exhibited 3.06 ppm of carbon monoxide while the other location exhibited 4.35 ppm of carbon monoxide. The ozone and carbon monoxide data are also visualized in an interactive Web World Wind map using a time series slider bar.
+				</p><p>
+					The graphs above also indicate that the levels of ozone and carbon monoxide are higher in location without trees from 11 am to 3 pm.  However, in both cases of ozone and carbon monoxide, there is an exception at 10 am where both the pollutants are counterintuitively higher at the location with trees. Our future work will investigate potential cause behind this anomaly.
+				</p>
 			 </div>
 		  </div>
 		</div>
@@ -338,9 +347,11 @@
               <h3 class="panel-title">Discussion</h3>
             </div>
             <div class="panel-body">
-			Our Springfield study reveals that urban areas with trees have better air quality compared to similar urban areas without trees. This finding has potential programmatic implications for the City of Springfield to reassess its current policy on urban tree planting. Lower levels of pollutants in the air due to tree planting would subsequently help reduce current levels of asthma incidence among citizens in Springfield.
-		  <br><br>
-		    In Springfield, our team coordinated with an actual user community in the data collection phase. We worked with Springfield students and residents outside of our university through the 'Make-it' program and ‘<a href="http://ag.umass.edu/mass4h">4-H</a>’. We showed high school students and some parents how they can collect this data using the Arduino sensors. As a future step, we intend to develop new partnerships and strengthen our existing ties. The overall goal of our outreach is to increase awareness of air pollution to improve health outcomes of citizens living in urban areas like Springfield.
+				<p>
+					Our Springfield study reveals that urban areas with trees have better air quality compared to similar urban areas without trees. This finding has potential programmatic implications for the City of Springfield to reassess its current policy on urban tree planting. Lower levels of pollutants in the air due to tree planting would subsequently help reduce current levels of asthma incidence among citizens in Springfield.
+				</p><p>
+					In Springfield, our team coordinated with an actual user community in the data collection phase. We worked with Springfield students and residents outside of our university through the 'Make-it' program and ‘<a href="http://ag.umass.edu/mass4h">4-H</a>’. We showed high school students and some parents how they can collect this data using the Arduino sensors. As a future step, we intend to develop new partnerships and strengthen our existing ties. The overall goal of our outreach is to increase awareness of air pollution to improve health outcomes of citizens living in urban areas like Springfield.
+				</p>
 		  </div>
 		  </div>
 		</div>
