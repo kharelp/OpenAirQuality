@@ -17,6 +17,8 @@ right: 10px;
 padding-bottom: 80px;
 }
 
+.panel-body p:last-child { margin-bottom: 0; }
+
 footer {
   left: 0px;
   position: fixed;
