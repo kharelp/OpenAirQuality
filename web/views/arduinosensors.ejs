@@ -5,109 +5,113 @@
     </head>
 	<body id ="home">
 		<%-commonNavigation%> <!-- Fixed navbar -->
-	<div id="maincontent" class="container-fluid">
-	<!--		<div class="col-sm-12"> -->
-		<h2 id ="title"> Arduino Air Sensors </h2><br><br>
+		<div id="maincontent" class="container-fluid">
+			<h2 id ="title"> Arduino Air Sensors </h2>
 	  
-	  <div class="row" style=text-align:justify;>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Low Cost Air Sensors</h3>
-            </div>
-			<div class="panel-body">
-			When we thought about measuring the air quality in cities, we were faced with a conundrum of how to fabricate low cost sensors that were as effective as big units that cost thousands of dollars. We thought of using Arduino, which is an open source programmable processor and board. When combined with inexpensive sensors, we wanted to investigate whether it was possible to build an Arduino air quality sensor system that measured accurate air quality readings for a total cost of under $100. 
-			<br/><br/>
-			The benefit of low cost sensors is that they can be mass produced more easily and distributed around the community. The end plan would be to distribute the sensors around cities and get readings from all over the city to achieve a comprehensive data collection, as opposed to having one or two clunky sensors that are stationary measuring data from only a few points. 			
-			</div>
-          </div>
-        </div><!-- /.col-sm-6 -->
-		<div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-body">
-			<div style="text-align: center;">
-				<img src="/images/oshparkboard2.jpg" alt="OshParkBoard" width="300" height="300">
-				<figcaption>Sample Arduino Air Sensor</a></figcaption><br/><br/><br/></br><br/><br/></br>
-			</div>
-        </div><!-- /.col-sm-6 -->
-		</div>
-	   </div>
-	   </div>
+			  <div class="row">
+				<div class="col-sm-6">
+				  <div class="panel panel-default">
+					<div class="panel-heading">
+					  <h3 class="panel-title">Low Cost Air Sensors</h3>
+					</div>
+					<div class="panel-body">
+						<p>
+						When we thought about measuring the air quality in cities, we were faced with a conundrum of how to fabricate low cost sensors that were as effective as big units that cost thousands of dollars. We thought of using Arduino, which is an open source programmable processor and board. When combined with inexpensive sensors, we wanted to investigate whether it was possible to build an Arduino air quality sensor system that measured accurate air quality readings for a total cost of under $100. 
+						</p><p>
+						The benefit of low cost sensors is that they can be mass produced more easily and distributed around the community. The end plan would be to distribute the sensors around cities and get readings from all over the city to achieve a comprehensive data collection, as opposed to having one or two clunky sensors that are stationary measuring data from only a few points. 			
+						</p>
+					</div>	<!-- class="panel-body" -->
+				  </div>	<!-- class="panel" -->
+				</div>	<!-- /.col-sm-6 -->
+				<div class="col-sm-6">
+				  <div class="panel panel-default">
+					<div class="panel-body">
+						<figure>
+							<img src="/images/oshparkboard2.jpg" alt="Sample Arduino Air Sensor" />
+							<figcaption>Sample Arduino Air Sensor</figcaption>
+						</figure>
+					</div>	<!-- class="panel-body" -->
+				  </div>	<!--  class="panel" -->
+				</div>	<!-- /.col-sm-6 -->
+			</div>	<!-- class="row" -->
 			  
-	  <div class="row" style=text-align:justify;>
-	  <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-body">
-			<div style="text-align: center;">
-			  <img src="/images/oshparkboard1.jpg" alt="OshParkBoard" width="300" height="300">
-			  <figcaption>An Example of an Osh Park Board</a></figcaption>
-			  <img src="/images/oven.jpg" alt="OshParkBoard" width="600" height="600">
-			  <figcaption>Arduino air sensors in a toaster oven</a></figcaption>
-			  <br/><br/><br/><br/><br/></br><br/><br/></br><br/><br/></br><br/>
-			</div>
-          </div>
-        </div><!-- /.col-sm-6 -->
-      </div>
-	  <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Assembly of Ozone and Carbon Monoxide Sensors</h3>
-            </div>
-            <div class="panel-body">
-			The sensors we selected for this project -- different sensors for each gas we studied as described in the Springfield and Kathmandu case study web pages -- contain a substance that, when exposed to the gas it is designed for, changes the resistance in the circuitry of the sensor. The pins on the sensor simply measure the voltage passing through the pin of the sensor. However, it is possible to measure what the change in voltage would equate to in terms of a quantitative measurement, such as ppm or ppb. 
-			<br/><br/>
-			To assemble these sensors, we purchased an “Osh Park board” which would be used to connect the sensor to the Arduino. In order to mount the MICS Sensor used to measure Ozone and Carbon Monoxide (see below), we needed to solder the sensor onto the Osh Park board. This required us to use soldering paste, which was lead-based, to solder the sensor on. It was important to be careful and be sure that the paste was not touching more than one pin, which would cause “bridging”, when two or more pins are connected directly as opposed to through the circuit, which would cause short-circuiting. Also, analog output pins had to be soldered on to the Osh Park board as well so we could obtain voltage readings in order to determine numerical values for gas levels. 
-			<br><br>
-			Once the soldering paste was correctly applied, and the sensor and pins correctly placed, it is necessary to heat the paste for it to actually solder. We had to put the sensors in a toaster oven which we would then turn up to 400°C for one minute (see image on the left). Then, we turned the oven off for one minute. Then, we turned it back up to 400°C until the paste turned silver. Then we removed the sensors from the oven and let them cool. After this step, all that is left is calibrating the sensors, and we are ready to measure some data.
-            </div>
-          </div>
-        </div><!-- /.col-sm-6 -->
-		</div>
+			<div class="row">
+			  <div class="col-sm-6">
+				  <div class="panel panel-default">
+					<div class="panel-body">
+						<figure>
+							<img src="/images/oshparkboard1.jpg" alt="An Example of an Osh Park Board" />
+						  <figcaption>An Example of an Osh Park Board</figcaption>
+						</figure>
+						<p>&nbsp;</p>
+						<figure>
+							<img src="/images/oven.jpg" alt="Arduino air sensors in a toaster oven" />
+							<figcaption>Arduino air sensors in a toaster oven</figcaption>
+						</figure>
+					</div>
+				  </div>
+				</div><!-- /.col-sm-6 -->
+			  <div class="col-sm-6">
+				  <div class="panel panel-default">
+					<div class="panel-heading">
+					  <h3 class="panel-title">Assembly of Ozone and Carbon Monoxide Sensors</h3>
+					</div>
+					<div class="panel-body">
+						<p>
+							The sensors we selected for this project -- different sensors for each gas we studied as described in the Springfield and Kathmandu case study web pages -- contain a substance that, when exposed to the gas it is designed for, changes the resistance in the circuitry of the sensor. The pins on the sensor simply measure the voltage passing through the pin of the sensor. However, it is possible to measure what the change in voltage would equate to in terms of a quantitative measurement, such as ppm or ppb. 
+						</p><p>
+							To assemble these sensors, we purchased an “Osh Park board” which would be used to connect the sensor to the Arduino. In order to mount the MICS Sensor used to measure Ozone and Carbon Monoxide (see below), we needed to solder the sensor onto the Osh Park board. This required us to use soldering paste, which was lead-based, to solder the sensor on. It was important to be careful and be sure that the paste was not touching more than one pin, which would cause “bridging”, when two or more pins are connected directly as opposed to through the circuit, which would cause short-circuiting. Also, analog output pins had to be soldered on to the Osh Park board as well so we could obtain voltage readings in order to determine numerical values for gas levels. 
+						</p><p>
+							Once the soldering paste was correctly applied, and the sensor and pins correctly placed, it is necessary to heat the paste for it to actually solder. We had to put the sensors in a toaster oven which we would then turn up to 400°C for one minute (see image on the left). Then, we turned the oven off for one minute. Then, we turned it back up to 400°C until the paste turned silver. Then we removed the sensors from the oven and let them cool. After this step, all that is left is calibrating the sensors, and we are ready to measure some data.
+						</p>
+					</div>
+				  </div>
+				</div><!-- /.col-sm-6 -->
+			 </div>
 		
-		<div class="row" style=text-align:justify;>
-	    <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Calibration</h3>
-            </div>
-            <div class="panel-body">
-			<strong><i>Ozone Sensor Calibration</strong></i>:
-			<br/><br/>
-			We used <a href="http://tools.thermofisher.com/content/sfs/brochures/D19880~.pdf">Ozone Primary Standard Model 49i-PS</a> to generate known amount of ozone (ranging from 10PPB - 500 PPB) which was then immediately quantified by a very reliable and routinely calibrated <a href="https://tools.thermofisher.com/content/sfs/manuals/EPM-manual-Model%2049i.pdf">Thermo Scientific 49i Photometric Ozone Analyzer</a>. 
-			To calibrate our MICS-2614 ozone sensor, we placed them in an air-tight acrylic chamber available in Professor Richard Peltier’s Aerosol Lab. This chamber has a teflon lining to reduce ozone reactivity with other components before reaching the analyzer. We placed our device in between a device that generates Ozone and a device that analyzes the amount of Ozone in the container. Our arduino-based air sensor was being powered through a 9V lithium battery and the data was being logged via an integrated SD card. The voltage would stabilize  around 3.5-3.6 V for every range of ozone we generated. The responses the sensors were giving were exponential, which was expected and correct. 
-			<br/><br/>
-			<strong><i>Carbon Monoxide Sensor Calibration</strong></i>:
-			<br/><br/>
-			To calibrate the Carbon Monoxide sensor, we used 0.5% CO tank (near 5000PPM) to generate and expose our Ardunio-based MICS 5524 sensor to CO ranges between 0 and 200 ppm. Since 0.5% is a very high concentration, we used pressure regulators and dilution orifices to restrict the flow of the tank and also introduced (using external pump) plenty of room air for diluting the released CO into the fairly-well sealed chamber. We worked in a well maintained fume hood to restrict the flow of CO out of the chamber. In that chamber, we also included a realible and frequently calibrated <a href="http://www.wolfsense.com/multi-toxic-gas-meter-monitors.html">electrochemical CO sensor</a> to use as a reference method.
-            </div>
-          </div>
-        </div><!-- /.col-sm-6 -->
-		<div class="col-sm-6">
-          <div class="panel panel-default">
-		  <div class="panel-heading">
-              <h3 class="panel-title">Conclusion</h3>
-            </div>
-            <div class="panel-body">
-			  Through this calibration testing, we confirmed that the Arduino-based sensors were collecting reliable data. We should note that our open source Arduino-based sensors were only used in the Springfield case study. The sensors used in the Kathmandu case were commercial sensors. Our goal in the future is to develop open source sensors for the gases of interest in Kathmandu -- particulate matter and black carbon. 
-			  <br/><br/>
-			  Click <a href = "https://github.com/kharelp/UrbanAirQuality/blob/master/web/views/airquality.ino">here</a> to access the codes used to build the Arduino Air Sensors.
-			  <br/><br/>
-			  <div style="text-align: center;">
-			  <img src="/images/calibration.jpg" alt="OshParkBoard" width="300" height="300">
-			  <figcaption>Students worked in the Peltier Lab</figcaption>
-			  <img src="/images/build.jpg" alt="OshParkBoard" width="600" height="600">
-			  <figcaption></a>The Making of Arduino Air Sensors</figcaption>
-			  <br/><br/></br>
-			</div>
-          </div>
-        </div><!-- /.col-sm-6 -->
-      </div>
-	  </div>
-	  
-	   	
-	<!--	</div> <!--Container Fluid-->
-		
-	  </div> <!--Column of Container Fluid -->
+			<div class="row">
+			<div class="col-sm-6">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h3 class="panel-title">Calibration</h3>
+				</div>
+				<div class="panel-body">
+				<h5>Ozone Sensor Calibration</h5>
+				<p>
+				We used <a href="http://tools.thermofisher.com/content/sfs/brochures/D19880~.pdf">Ozone Primary Standard Model 49i-PS</a> to generate known amount of ozone (ranging from 10PPB - 500 PPB) which was then immediately quantified by a very reliable and routinely calibrated <a href="https://tools.thermofisher.com/content/sfs/manuals/EPM-manual-Model%2049i.pdf">Thermo Scientific 49i Photometric Ozone Analyzer</a>. 
+				To calibrate our MICS-2614 ozone sensor, we placed them in an air-tight acrylic chamber available in Professor Richard Peltier’s Aerosol Lab. This chamber has a teflon lining to reduce ozone reactivity with other components before reaching the analyzer. We placed our device in between a device that generates Ozone and a device that analyzes the amount of Ozone in the container. Our arduino-based air sensor was being powered through a 9V lithium battery and the data was being logged via an integrated SD card. The voltage would stabilize  around 3.5-3.6 V for every range of ozone we generated. The responses the sensors were giving were exponential, which was expected and correct. 
+				</p>
+				<h5>Carbon Monoxide Sensor Calibration</h5>
+				<p>
+				To calibrate the Carbon Monoxide sensor, we used 0.5% CO tank (near 5000PPM) to generate and expose our Ardunio-based MICS 5524 sensor to CO ranges between 0 and 200 ppm. Since 0.5% is a very high concentration, we used pressure regulators and dilution orifices to restrict the flow of the tank and also introduced (using external pump) plenty of room air for diluting the released CO into the fairly-well sealed chamber. We worked in a well maintained fume hood to restrict the flow of CO out of the chamber. In that chamber, we also included a realible and frequently calibrated <a href="http://www.wolfsense.com/multi-toxic-gas-meter-monitors.html">electrochemical CO sensor</a> to use as a reference method.
+				</p>
+				</div>
+			  </div>
+			</div><!-- /.col-sm-6 -->
+			<div class="col-sm-6">
+			  <div class="panel panel-default">
+			 	 <div class="panel-heading">
+				  <h3 class="panel-title">Conclusion</h3>
+				</div>
+				<div class="panel-body">
+				<p>
+				  Through this calibration testing, we confirmed that the Arduino-based sensors were collecting reliable data. We should note that our open source Arduino-based sensors were only used in the Springfield case study. The sensors used in the Kathmandu case were commercial sensors. Our goal in the future is to develop open source sensors for the gases of interest in Kathmandu -- particulate matter and black carbon. 
+				</p><p>
+				  Click <a href = "https://github.com/kharelp/UrbanAirQuality/blob/master/web/views/airquality.ino">here</a> to access the codes used to build the Arduino Air Sensors.
+				</p>
+				  <figure>
+					  <img src="/images/calibration.jpg" alt="Students worked in the Peltier Lab" />
+					  <figcaption>Students worked in the Peltier Lab</figcaption>
+				  </figure>
+				  <figure>
+						<img src="/images/build.jpg" alt="The Making of Arduino Air Sensors" />
+						<figcaption>The Making of Arduino Air Sensors</figcaption>
+				  </figure>
+				</div>	<!-- class="panel-body" -->
+			  </div>	<!-- class="panel" -->
+			</div>	<!-- class=col-sm-6 -->
+		  </div>	<!-- class=row -->
+	  </div>	<-- id=maincontent -->
 	 <%-commonFooter%>
     </body>
 	

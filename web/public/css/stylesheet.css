@@ -5,19 +5,22 @@ body{
 	height:100%;
 }
 
-h1,h2,h3{text-align: center;}
-h4{text-align:left;}
-ul{text-align: center;}
+h1, h2, h3 { text-align: center; }
+h4 { text-align:left; }
 
 #maincontent{
-position: absolute;
-top: 50px;
-left: 10px;
-right: 10px;
-padding-bottom: 80px;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	right: 10px;
+	padding-bottom: 80px;
 }
 
 .panel-body p:last-child { margin-bottom: 0; }
+
+figure { width: 100%; text-align: center; }
+figure img { width: 100%; }
+figcaption { margin-top: 1em; font-size: 1.1em; }
 
 footer {
   left: 0px;
@@ -31,24 +34,24 @@ footer {
   z-index: 1000;
 }
 
-footer .col-sm-4 {  text-align: center; padding-top: 8px; }
+footer .col-sm-4 { text-align: center; padding-top: 8px; }
 
 #mapcontent{
-position: absolute;
-top: 50px;
-left: 50px;
-right: 50px;
-padding-bottom: 80px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	right: 50px;
+	padding-bottom: 80px;
 }
 
 #meettheteamcontent{
-top: 40px;
-padding-bottom: 40px;
+	top: 40px;
+	padding-bottom: 40px;
 }
 
 #arduinocontent{
-top: 90px;
-padding-bottom: 40px;
+	top: 90px;
+	padding-bottom: 40px;
 }
 
 #ex1Slider .slider-selection {
@@ -56,22 +59,17 @@ padding-bottom: 40px;
 }
 
 #canvasOne{
-width:600;
-height:700;
+	width:600;
+	height:700;
 }
 
 #mapContainer{
-text-align: center;
+	text-align: center;
 }
 
-.legend td,.legend th{
-padding: 5px;
-}
+.legend td,.legend th { padding: 5px; }
 
-.legendSymbol
-{
-	text-align: center;	
-}
+.legendSymbol { text-align: center;	}
 
 .greenPm, .yellowPm, .redPm, .lightyellowBc, .brightyellowBc, .orangeBc
 {
@@ -79,31 +77,19 @@ padding: 5px;
 	font-size: 2em;
 }
 
-.greenPm{
-color:rgb(49, 163, 84)
-}
+.greenPm { color:rgb(49, 163, 84) }
 
-.yellowPm{
-color:rgb(254, 196, 79)
-}
+.yellowPm { color:rgb(254, 196, 79) }
 
-.redPm{
-color:rgb(240, 59, 32)
-}
+.redPm { color:rgb(240, 59, 32) }
 
-.lightyellowBc{
-color:rgb(255, 247, 188)
-}
+.lightyellowBc { color:rgb(255, 247, 188) }
 
-.brightyellowBc{
-color:rgb(254, 196, 79)
-}
+.brightyellowBc { color:rgb(254, 196, 79) }
 
-.orangeBc{
-color: rgb(217, 95, 14) 
-}
+.orangeBc { color: rgb(217, 95, 14) }
 
-.photoContent{
+.photoContent {
 	position: relative;
 	width: 100%;
     top: 50px;
@@ -136,22 +122,18 @@ color: rgb(217, 95, 14)
 	white-space:nowrap;
 	
 }
-img {
-        height: 100px;
-        width: 100px;
-        object-fit: contain;
-}
 
-#home #homelink, #arduinosensors #arduinosensorslink, #kathmandu #kathmandulink, #springfield #springfieldlink, #meettheteam #meettheteamlink{
-color:purple;
-}
+#homelink, 
+#arduinosensorslink, 
+#kathmandulink, 
+#springfieldlink, 
+#meettheteamlink { color:purple; }
 
-#homelink:hover{color:purple;}
-#arduinosensorslink:hover{color:purple;}
-#kathmandulink:hover{color:purple;}
-#springfieldlink:hover{color:purple;}
-#meettheteamlink:hover{color:purple;}
-
+#homelink:hover, 
+#arduinosensorslink:hover, 
+#kathmandulink:hover, 
+#springfieldlink:hover, 
+#meettheteamlink:hover {color:purple;}
 
 #title-box{
 	background-color: rgb(239,239,239);
