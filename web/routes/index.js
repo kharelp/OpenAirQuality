@@ -3,7 +3,7 @@ var router = express.Router();
 
 /*Header for bootstrap for every page*/
 
-var commonHeader= '<meta charset="utf-8"> \n\
+var commonHeader = '<meta charset="utf-8"> \n\
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> \n\
 		<meta name="viewport" content="width=device-width, initial-scale=1"> \n\
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --> \n\
@@ -37,8 +37,9 @@ var commonHeader= '<meta charset="utf-8"> \n\
  \n\
 		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css" /> \n\
 '
+
 /*Header for Navigation Bar for every page*/
-var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
+var commonNavigation = '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 		  <div class="container">\n\
 			<div class="navbar-header">\n\
 			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">\n\
@@ -60,17 +61,24 @@ var commonNavigation= '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 		  </div>\n\
 		</nav>\n\
 '		
-var commonFooter= ' <footer class="footer">\n\
-      <div class="container">\n\
-       <p class="footer-left"><a href="https://github.com/kharelp/UrbanAirQuality">GitHub</a> | GPLv3</p>\n\
-      </div>\n\
+
+var commonFooter = '<footer class="footer">\n\
+		<div class="container">\n\
+			<div class=row>\n\
+				<div class="col-sm-4">Code available on <a href="https://github.com/kharelp/OpenAirQuality">GitHub.com</a></div>\n\
+				<div class="col-sm-4">Distributed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a></div>\n\
+				<div class="col-sm-4">Built with <a href="http://getbootstrap.com">Bootstrap</a> and \
+					<a href="https://webworldwind.org">NASA Web World Wind</a></div>\n\
+			</div>\n\
+		</div>\n\
     </footer>\n\
 '
+
 var pages = {'/': 'index','/arduinosensors':'arduinosensors', '/kathmandu':'kathmandu', 
 					'/springfield':'springfield', '/meettheteam':'meettheteam'}
 
 /* GET pages. */
-for (page in pages){
+for (page in pages) {
 	router.get(page, function(req, res, next) {
 		console.log('path requested: ' + req.originalUrl + '; page to be loaded: ' + pages[req.originalUrl]);
 		var cn = commonNavigation.replace(req.originalUrl, '#')
