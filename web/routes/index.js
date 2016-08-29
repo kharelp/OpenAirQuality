@@ -32,8 +32,6 @@ var commonHeader = '<meta charset="utf-8"> \n\
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> \n\
 		<![endif]--> \n\
 		\n\
-		<!--Bootstrap footer CSS --> \n\
-		<link href="/css/sticky-footer.css" rel="stylesheet">\n\
  \n\
 		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css" /> \n\
 '
@@ -62,7 +60,7 @@ var commonNavigation = '<nav class="navbar navbar-inverse navbar-fixed-top">\n\
 		</nav>\n\
 '		
 
-var commonFooter = '<footer class="footer">\n\
+var commonFooter = '<footer>\n\
 		<div class="container">\n\
 			<div class=row>\n\
 				<div class="col-sm-4">Code available on <a href="https://github.com/kharelp/OpenAirQuality">GitHub.com</a></div>\n\

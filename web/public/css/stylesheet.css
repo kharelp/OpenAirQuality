@@ -1,7 +1,7 @@
 body{			
 	background-color: rgb(247,247,247);
 	max-width:1080px;
-	margin:0 auto;	
+	margin:0 auto 36px auto;	
 	height:100%;
 }
 
@@ -16,6 +16,20 @@ left: 10px;
 right: 10px;
 padding-bottom: 80px;
 }
+
+footer {
+  left: 0px;
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 35px;
+  background-color: rgb(50, 50, 50);
+  color: rgb(157, 157, 157);
+  z-index: 1000;
+}
+
+footer .col-sm-4 {  text-align: center; padding-top: 8px; }
 
 #mapcontent{
 position: absolute;
