@@ -18,8 +18,8 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 35px;
-  background-color: #000000;
-  color: white;
+  background-color: rgb(50, 50, 50);
+  color: rgb(157, 157, 157);
   z-index: 1000;
 }
 
