@@ -78,7 +78,7 @@ var pages = {'/': 'index','/arduinosensors':'arduinosensors', '/kathmandu':'kath
 /* GET pages. */
 for (page in pages) {
 	router.get(page, function(req, res, next) {
-		var cn = commonNavigation.replace('href="' + req.originalUrl, 'href="#')
+		var cn = commonNavigation.replace('href="' + req.originalUrl + '"', 'href="#"')
 		res.render(pages[req.originalUrl],{commonHeader: commonHeader, commonNavigation: cn, commonFooter: commonFooter });
 	});
 }
