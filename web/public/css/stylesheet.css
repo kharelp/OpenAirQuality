@@ -113,18 +113,6 @@ footer .col-sm-4 { text-align: center; padding-top: 8px; }
 	text-decoration: underline;
 }
 
-.scroll-down-instructions {
-	position: fixed;
-	bottom: 5px;
-	left:20px;
-	color: white;
-	text-decoration: bold;
-	z-index: 5000;
-	font-size: 12px;
-	white-space:nowrap;
-	
-}
-
 #homelink, 
 #arduinosensorslink, 
 #kathmandulink, 
