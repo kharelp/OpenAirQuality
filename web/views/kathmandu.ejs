@@ -22,13 +22,15 @@
 			<div class=row>
 				<div class="col-sm-4">
 					<h5>
-						Drag slider to see daily cycle of air quality
+						Drag the slider to see daily cycle of air quality
 					</h5>
-					<p>
-						&nbsp;&nbsp;<input id="ex1" data-slider-id='ex1Slider' type="text" 
+					<p class="text-center">
+						<input id="ex1" data-slider-id='ex1Slider' type="text" 
 						data-slider-min="0" data-slider-max="23" data-slider-step="1" 
-						data-slider-value="0" data-slider-tooltip="hide"/>
-						&nbsp;&nbsp;<span id='time'>0:00</span><br />
+						data-slider-value="0" data-slider-tooltip="hide"/><br />
+						Local time <span id='time'>0:00</span><br />
+					</p>
+					<p>
 						<input type="radio" name="airquality" value="pm25" checked> PM 2.5 <br />
 						<input type="radio" name="airquality" value="blackcarbon"> Black Carbon<br />
 					</p>
@@ -82,8 +84,9 @@
 									</tr>
 								</tbody>
 							</table>
-						</div>	<!-- class="panel-body" -->
-					</div>	<!-- class="panel panel-default" -->
+						</div>	<!--  class="panel-body" -->
+					</div>	<!--  class="panel" -->
+					<p>&darr; Scroll down for the full results of our analysis &darr;</p>
 				</div>	<!--  class="col-sm-4" -->
 				<div class="col-sm-8" style="text-align: center;">
 					<!-- Create a canvas for Web World Wind. -->
@@ -274,7 +277,7 @@
 	</div>
 </div>
 	
-      <div class="row" style=text-align:justify;>
+      <div class="row">
         <div class="col-sm-6"> 
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -310,7 +313,7 @@
       </div>	<!-- /.col-sm-6 -->
 	 </div>	<!-- class="row" -->
 	 
-	  <div class="row" style=text-align:justify;>
+	  <div class="row">
         <div class="col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -341,7 +344,7 @@
 		</div>
 	  </div>
 	  
-	 <div class="row" style=text-align:justify;>
+	 <div class="row">
 	  <div class="col-sm-12">
           <div class="panel panel-default">
             <div class="panel-heading">
@@ -360,9 +363,7 @@
 		  </div>
 		</div>
 	  </div>
-	  
-	  
-		 <div class="scroll-down-instructions"><p>&darr; Scroll down for the full results of our analysis &darr;</p></div>
+	  	  
 		</div>	<!-- mapcontent -->
 	 <%-commonFooter%>
 	</body>

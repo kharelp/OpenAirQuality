@@ -22,71 +22,73 @@
 			</div>
 			<div class=row style=text-align:justify;>
 				<div class="col-sm-4">
-				 <h5>
-					Drag slider to see change in air quality over collection period
-				 </h5>
-				 <p>
-					&nbsp;&nbsp;<input id="ex1" data-slider-id='ex1Slider' type="text" 
-						data-slider-min="10" data-slider-max="15" data-slider-step="1" 
-						data-slider-value="0" data-slider-tooltip="hide"/>
-						&nbsp;&nbsp;<span id='time'>10:00</span><br />
-					<input type="radio" name="airquality" value="ozone" checked> Ozone <br />
-					<input type="radio" name="airquality" value="carbonm"> Carbon Monoxide<br />
-				  </p>
+					<h5>
+						Drag the slider to see change in air quality over collection period
+					</h5>
+					<p class="text-center">
+						<input id="ex1" data-slider-id='ex1Slider' type="text" 
+							data-slider-min="10" data-slider-max="15" data-slider-step="1" 
+							data-slider-value="0" data-slider-tooltip="hide"/><br />
+							Local time <span id='time'>10:00</span>
+					</p>
+					<p>
+						<input type="radio" name="airquality" value="ozone" checked> Ozone <br />
+						<input type="radio" name="airquality" value="carbonm"> Carbon Monoxide<br />
+					</p>
 					<div class="panel panel-default">
-					<div class="panel-heading">
-					<h3 class="panel-title">Legend: Springfield Air Quality</h3>
-					</div>
-					<div class="panel-body">
-					<table class = legend>
-						<thead>
-							<tr>
-								<th class = legendSymbol>Symbol</th>
-								<th>Ozone Level (Dobson units)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class = greenPm>&#x25A0;</td>
-								<td>&le; 45</td>
-							</tr>
-							<tr>
-								<td class = yellowPm>&#x25A0;</td>
-								<td>&gt; 45 and &le; 60</td>
-							</tr>
-							<tr>
-								<td class = redPm>&#x25A0;</td>
-								<td>&gt; 60</td>
-							</tr>
-						</tbody>
-					</table>
-					<p>&nbsp;</p>
-					<table class = legend>
-						<thead>
-							<tr>
-								<th class = legendSymbol>Symbol</th>
-								<th>Carbon Monoxide Level (ppm)</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class = lightyellowBc>&#x25A0;</td>
-								<td>&le; 2.5</td>
-							</tr>
-							<tr>
-								<td class = brightyellowBc>&#x25A0;</td>
-								<td>&gt; 2.5 and &le; 4</td>
-							</tr>
-							<tr>
-								<td class = orangeBc>&#x25A0;</td>
-								<td>&gt; 4</td>
-							</tr>
-						</tbody>
-					</table>
-
-					</div>
-				</div>
-				</div>
+						<div class="panel-heading">
+							<h3 class="panel-title">Legend: Springfield Air Quality</h3>
+						</div>
+						<div class="panel-body">
+							<table class = legend>
+								<thead>
+									<tr>
+										<th class = legendSymbol>Symbol</th>
+										<th>Ozone Level (Dobson units)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class = greenPm>&#x25A0;</td>
+										<td>&le; 45</td>
+									</tr>
+									<tr>
+										<td class = yellowPm>&#x25A0;</td>
+										<td>&gt; 45 and &le; 60</td>
+									</tr>
+									<tr>
+										<td class = redPm>&#x25A0;</td>
+										<td>&gt; 60</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+							<table class = legend>
+								<thead>
+									<tr>
+										<th class = legendSymbol>Symbol</th>
+										<th>Carbon Monoxide Level (ppm)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class = lightyellowBc>&#x25A0;</td>
+										<td>&le; 2.5</td>
+									</tr>
+									<tr>
+										<td class = brightyellowBc>&#x25A0;</td>
+										<td>&gt; 2.5 and &le; 4</td>
+									</tr>
+									<tr>
+										<td class = orangeBc>&#x25A0;</td>
+										<td>&gt; 4</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>	<!--  class="panel-body" -->
+					</div>	<!--  class="panel" -->
+					<p>&darr; Scroll down for the full results of our analysis &darr;</p>
+				</div>	<!--  class="col-sm-4" -->
 				<div class="col-sm-8" style="text-align: center;">
 					<!-- Create a canvas for Web World Wind. -->
 					<canvas id="canvasOne" width=600 height=700 style="text-align: center;"></canvas>
@@ -354,7 +356,6 @@
 		  </div>
 		</div>
 	  </div>
-	 <div class="scroll-down-instructions"><p>&darr; Scroll down for the full results of our analysis &darr;</p></div>
 	</div>
 	<%-commonFooter%>
 
