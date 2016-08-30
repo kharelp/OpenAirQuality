@@ -14,13 +14,13 @@
 		<link type="text/css" rel="stylesheet" href="/css/bootstrapslider.css">
 	</head>
 
-	<body id ="home">
+	<body>
 		<%- commonNavigation %>
-		<div id = mapcontent class="container-fluid">
+		<div id = maincontent class="container-fluid">
 			<div class="col-sm-12">
 				<h2 id="subtitle">Air Quality in Springfield, Massachusetts, USA</h2>
 			</div>
-			<div class=row style=text-align:justify;>
+			<div class=row>
 				<div class="col-sm-4">
 					<h5>
 						Drag the slider to see change in air quality over collection period
@@ -89,13 +89,12 @@
 					</div>	<!--  class="panel" -->
 					<p>&darr; Scroll down for the full results of our analysis &darr;</p>
 				</div>	<!--  class="col-sm-4" -->
-				<div class="col-sm-8" style="text-align: center;">
+				<div class="col-sm-8" id="mapPanel">
 					<!-- Create a canvas for Web World Wind. -->
-					<canvas id="canvasOne" width=600 height=700 style="text-align: center;"></canvas>
-					<div class="www-attribution style" style="text-align: left;">Built with NASA's <a href="https://webworldwind.org/" target="_blank">Web World Wind</a></div>
+					<canvas id="canvasOne"></canvas>
+					<div class="www-attribution">Built with NASA's <a href="https://webworldwind.org/">Web World Wind</a></div>
 				</div>
-				
-            </div>
+            </div>	<!-- class="row" -->
                     
 
 	<script>
@@ -239,13 +238,13 @@
             <div class="panel-body">
 			<div style="text-align: center;">
 			<div class="row">
-			<div class="col-sm-6">
-				<iframe width="480" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/21.embed"></iframe>
-			</div>
-			<div class="col-sm-6">
-				<iframe width="480" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/23.embed"></iframe>
-			</div>
-		</div>
+				<div class="col-sm-6">
+					<iframe width="480" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/21.embed"></iframe>
+				</div>
+				<div class="col-sm-6">
+					<iframe width="480" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~pkharel/23.embed"></iframe>
+				</div>
+			</div> <!-- class="row" -->
 	</div>
 	</div>
 	</div>

@@ -13,9 +13,9 @@
 
 	</head>
 
-	<body id ="home">
+	<body>
 		<%- commonNavigation %>
-		<div id = mapcontent class="container-fluid">
+		<div id = maincontent class="container-fluid">
 			<div class="col-sm-12">
 				<h2 id="subtitle">Air Quality in Kathmandu, Nepal</h2>
 			</div>
@@ -88,10 +88,10 @@
 					</div>	<!--  class="panel" -->
 					<p>&darr; Scroll down for the full results of our analysis &darr;</p>
 				</div>	<!--  class="col-sm-4" -->
-				<div class="col-sm-8" style="text-align: center;">
+				<div class="col-sm-8" id="mapPanel">
 					<!-- Create a canvas for Web World Wind. -->
-					<canvas id="canvasOne" width=600 height=700></canvas>	
-					<div class="www-attribution" style="text-align: left;">Built with NASA's <a href="https://webworldwind.org/" target="_blank">Web World Wind</a></div>
+					<canvas id="canvasOne"></canvas>	
+					<div class="www-attribution">Built with NASA's <a href="https://webworldwind.org/">Web World Wind</a></div>
 				</div>
 			</div>	<!-- class=row -->
 		

@@ -38,14 +38,6 @@ footer .col-sm-4 { text-align: center; padding-top: 8px; }
 
 .text-center { text-align: center; }
 
-#mapcontent{
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	right: 50px;
-	padding-bottom: 80px;
-}
-
 #meettheteamcontent{
 	top: 40px;
 	padding-bottom: 40px;
@@ -58,11 +50,6 @@ footer .col-sm-4 { text-align: center; padding-top: 8px; }
 
 #ex1Slider .slider-selection {
 	background: #BABABA;
-}
-
-#canvasOne{
-	width:600;
-	height:700;
 }
 
 #mapContainer{
@@ -103,13 +90,17 @@ footer .col-sm-4 { text-align: center; padding-top: 8px; }
 #video-container { position: relative; width: 100%; height: 0; padding-bottom: 56.4%; }
 #video { position: absolute; left: 3%; top: 5%; width: 94%; height: 90%; }
 
+#mapPanel { position: relative; border: solid 1px gray; height: 0; padding-bottom: 56.4%; }
+#canvasOne { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
 .www-attribution {
-	position: relative;
-	top: -22px;
-	left: 370px;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
 	color: #d9d9d9;
 	font-size: 10px;
 }
+
 .www-attribution a {
 	color:#d9d9d9;
 	text-decoration: underline;
