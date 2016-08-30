@@ -77,6 +77,8 @@ footer .col-sm-4 { text-align: center; padding-top: 8px; }
 {
 	text-align: center;	
 	font-size: 2em;
+	padding-top: 0 !important;
+	padding-bottom: 6px !important;
 }
 
 .greenPm { color:rgb(49, 163, 84) }
